@@ -1,0 +1,9 @@
+
+
+table td , table th {
+  @apply p-4 border-b-2 border-gray-300 leading-[1] ;
+} 
+
+table td  {
+  @apply p-6 ;
+} 
