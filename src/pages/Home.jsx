@@ -8,8 +8,10 @@ const Home = () => {
       <div className="clear"></div>
       <ul className="mt-8">
         <li className="text-blue-800 underline">
-          {" "}
           <NavLink to="/prices">Price Plan Section</NavLink>
+        </li>
+        <li className="text-blue-800 underline">
+          <NavLink to="/articles">  Articles</NavLink>
         </li>
       </ul>
     </div>
