@@ -13,6 +13,9 @@ const Home = () => {
         <li className="text-blue-800 underline">
           <NavLink to="/articles">  Articles</NavLink>
         </li>
+        <li className="text-blue-800 underline">
+          <NavLink to="/faq">  FAQ</NavLink>
+        </li>
       </ul>
     </div>
   );
