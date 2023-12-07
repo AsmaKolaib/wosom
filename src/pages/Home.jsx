@@ -11,10 +11,13 @@ const Home = () => {
           <NavLink to="/prices">Price Plan Section</NavLink>
         </li>
         <li className="text-blue-800 underline">
-          <NavLink to="/articles">  Articles</NavLink>
+          <NavLink to="/articles"> Articles</NavLink>
         </li>
         <li className="text-blue-800 underline">
-          <NavLink to="/faq">  FAQ</NavLink>
+          <NavLink to="/faq">FAQ</NavLink>
+        </li>
+        <li className="text-blue-800 underline">
+          <NavLink to="/footer">footer</NavLink>
         </li>
       </ul>
     </div>
