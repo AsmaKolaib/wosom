@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../Button";
 import ArticleBox from "./articleBox";
 
-const Guide = () => {
+const Article = () => {
   return (
     <>
       <div className="m-8 p-14 pb-16 rounded-[40px] bg-main-color  ">
@@ -37,4 +37,4 @@ const Guide = () => {
   );
 };
 
-export default Guide;
+export default Article;

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Otherbox = () => {
+const ArticleBox = () => {
   return (
     <div className="relative">
       <div className="w-[86px] h-[86px] md:w-[66px] md:h-[66px] xl:w-[76px] xl:h-[76px] absolute top-[-25px] right-[-22px]">
@@ -58,4 +58,4 @@ const Otherbox = () => {
   );
 };
 
-export default Otherbox;
+export default ArticleBox;
