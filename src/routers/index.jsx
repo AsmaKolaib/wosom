@@ -8,6 +8,8 @@ import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 import Header from "../components/Header";
+
+import Partners from "../components/Partners/index";
 export const AppRouter = () => {
   return (
     <Routes>
@@ -19,6 +21,7 @@ export const AppRouter = () => {
       <Route path="/footer" element={<Footer />} />
       <Route path="/contact-us" element={<Contact/>} />
       <Route path="/header" element={<Header/>} />
+      <Route path="/partners" element={<Partners/>} />
       {/* <Route path="/login" element={} /> */}
       <Route path="*" element={<NotFound />} />
     </Routes>

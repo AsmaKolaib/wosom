@@ -21,3 +21,14 @@
   body{
     @apply bg-[#F1F0EC]
   }
+
+
+
+
+#container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px !important;
+    height: 300px !important;
+} 
