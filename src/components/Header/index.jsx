@@ -56,7 +56,6 @@ const Header = () => {
                   viewBox="0 0 41 41"
                   fill="none"
                   className="ml-2"
-                   
                 >
                   <g clip-path="url(#clip0_470_211)">
                     <path
@@ -90,28 +89,29 @@ const Header = () => {
             </span>
           </div>
           <div
-        className={`pt-20 w-[292px] h-fit bg-[#adadad] rounded-[20px] p-3 absolute  right-[51px] transition ease-in duration-[1s]	
+            className={`pt-20 w-[292px] h-fit bg-[#adadad] rounded-[20px] p-3 absolute  right-[51px] transition ease-in duration-[1s]	
         ${nav ? "  top-[17px]" : "top-[-1000px]"}
       `}
-      >
-        <div
-          style={{ direction: "rtl" }}
-          className="grid grid-cols-2 gap-x-4  gap-y-2 w-full text-center 	"
-        >
-          {Object.entries(navLinks).map(([key, value]) => (
-            <div className="bg-white  rounded-[8px]  px-8 py-3 ">
-              <NavLink to="#" className="font-main font-bold hover:opacity-90">
-                {value}
-              </NavLink>
+          >
+            <div
+              style={{ direction: "rtl" }}
+              className="grid grid-cols-2 gap-x-4  gap-y-2 w-full text-center 	"
+            >
+              {Object.entries(navLinks).map(([key, value]) => (
+                <div className="bg-white  rounded-[8px]  px-8 py-3 ">
+                  <NavLink
+                    to="#"
+                    className="font-main font-bold hover:opacity-90"
+                  >
+                    {value}
+                  </NavLink>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-      </div>
+          </div>
         </nav>
         <Hero />
       </section>
-
-     
     </section>
   );
 };
