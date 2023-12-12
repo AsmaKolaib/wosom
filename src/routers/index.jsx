@@ -11,6 +11,10 @@ import Header from "../components/Header";
 import Services from "../components/Services";
 import Partners from "../components/Partners/index";
 import Features from "../components/Features";
+
+
+import HeaderM from "../components/Header/index-m";
+import FooterM from "../components/Footer/index-m";
 export const AppRouter = () => {
   return (
     <Routes>
@@ -25,6 +29,9 @@ export const AppRouter = () => {
       <Route path="/partners" element={<Partners/>} />
       <Route path="/services" element={<Services/>} />
       <Route path="/features" element={<Features/>} />
+
+      <Route path="/header-m" element={<HeaderM/>} />
+      <Route path="/footer-m" element={<FooterM/>} />
       {/* <Route path="/login" element={} /> */}
       <Route path="*" element={<NotFound />} />
     </Routes>

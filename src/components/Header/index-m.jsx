@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import Hero from "../Hero";
+import Hero from "../Hero/index-m";
 const Header = () => {
   const [nav, setNav] = useState(false);
   const handleNav = () => {
@@ -17,11 +17,11 @@ const Header = () => {
   };
 
   return (
-    <section className="relative">
-      <section className="  relative flex w-full justify-between  text-black  hover:text-neutral-700  ">
-        <nav className="flex z-50 w-full justify-between py-2 px-3 font-main font-bold text-lg lg:py-2">
-          <div className="ml-10 flex w-2/4  justify-start items-center">
-            <a className=" bg-white rounded-[8px]  px-6 py-3" href="#">
+    <section className="relative px-4  py-3">
+      <section className="  relative flex w-full justify-between text-black  hover:text-neutral-700  ">
+        <nav className="flex z-50 w-full justify-between py-2 font-main font-bold text-sm ">
+          <div className=" flex w2/12  justify-start items-center">
+            <a className=" bg-white rounded-[8px]  px-2 py-3" href="#">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="80"
@@ -36,8 +36,8 @@ const Header = () => {
               </svg>
             </a>
           </div>
-          <div className=" z-10 mr-10 flex w-2/4 items-center justify-end py-4 pl-4 pr-3">
-            <span className="bg-white rounded-[8px]  px-8 py-3 mr-4 ">
+          <div className=" z-10  flex w-2/3 items-center justify-end ">
+            <span className="bg-white rounded-[8px]  px-8 py-3 mr-2 h-[100%] ">
               <a href="#" className="font-main font-bold hover:opacity-90">
                 Sing up
               </a>
@@ -52,7 +52,7 @@ const Header = () => {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"
-                  height="36"
+                  height="34"
                   viewBox="0 0 41 41"
                   fill="none"
                   className="ml-2"
@@ -89,16 +89,16 @@ const Header = () => {
             </span>
           </div>
           <div
-            className={`pt-20 w-[292px] h-fit bg-[#adadad] rounded-[20px] p-3 absolute  right-[51px] transition ease-in duration-[1s]	
-        ${nav ? "  top-[17px]" : "top-[-1000px]"}
+            className={`pt-20 w-[247px] h-fit bg-[#adadad] rounded-[20px] p-2 absolute  right-[-6px] transition ease-in duration-[1s]	
+        ${nav ? "  top-[-5px]" : "top-[-1000px]"}
       `}
           >
             <div
               style={{ direction: "rtl" }}
-              className="grid grid-cols-2 gap-x-4  gap-y-2 w-full text-center 	"
+              className="grid grid-cols-2 gap-x-2  gap-y-2  text-center text-xs	"
             >
               {Object.entries(navLinks).map(([key, value]) => (
-                <div className="bg-white  rounded-[8px]  px-8 py-3 ">
+                <div className="bg-white  rounded-[8px]  py-3 w-[100%] ">
                   <NavLink
                     to="#"
                     className="font-main font-bold hover:opacity-90"
@@ -110,7 +110,7 @@ const Header = () => {
             </div>
           </div>
         </nav>
-        {/* <Hero /> */}
+        <Hero />
       </section>
     </section>
   );
