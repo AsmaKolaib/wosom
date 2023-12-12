@@ -1,42 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-
+import DesktopLayout from "./DesktopLayout";
+import MoblieLayout from "./MoblieLayout";
 const Home = () => {
-  return (
-    <div className="flex flex-col justify-center items-center h-screen text-3xl">
-      <h1> Home page</h1>
-      <div className="clear"></div>
-      <ul className="mt-8">
-        <li className="text-blue-800 underline">
-          <NavLink to="/prices">Price Plan Section</NavLink>
-        </li>
-        <li className="text-blue-800 underline">
-          <NavLink to="/articles"> Articles</NavLink>
-        </li>
-        <li className="text-blue-800 underline">
-          <NavLink to="/faq">FAQ</NavLink>
-        </li>
-        <li className="text-blue-800 underline">
-          <NavLink to="/footer">footer</NavLink>
-        </li>
-        <li className="text-blue-800 underline">
-          <NavLink to="/contact-us">Contact us section </NavLink>
-        </li>
-        <li className="text-blue-800 underline">
-          <NavLink to="/header">header</NavLink>
-        </li>
-        <li className="text-blue-800 underline">
-          <NavLink to="/partners">partners</NavLink>
-        </li>
-        <li className="text-blue-800 underline">
-          <NavLink to="/services">Services</NavLink>
-        </li>
-        <li className="text-blue-800 underline">
-          <NavLink to="/features">Features</NavLink>
-        </li>
-      </ul>
-    </div>
-  );
+  const [width, setWidth] = useState(window.innerWidth);
+  const breakpoint = 620;
+  useEffect(() => {
+    const handleWindowResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleWindowResize);
+
+    // Return a function from the effect that removes the event listener
+    return () => window.removeEventListener("resize", handleWindowResize);
+  }, []);
+
+  return width < breakpoint ? <MoblieLayout /> : <DesktopLayout />;
 };
 
 export default Home;
