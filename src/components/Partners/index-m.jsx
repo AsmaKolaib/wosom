@@ -40,7 +40,7 @@ const index = () => {
                 alt={key}
                 className={`${
                   key === "King Saud"
-                    ? "w-[166px] h-[54px]"
+                    ? "w-[176px] h-[54px]"
                     : "w-[80px] h-[70px]"
                 }`}
               />

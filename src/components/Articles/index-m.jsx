@@ -18,13 +18,13 @@ const Article = () => {
         </div>
        
         <div className=" grid grid-cols-1  gap-y-12 mt-16 ">
-          <div class="h-auto w-2/2 px-12">
+          <div class="h-auto w-2/2 pl-6 pr-12">
             <ArticleBox />
           </div>
-          <div class="h-auto w-2/2 px-12">
+          <div class="h-auto w-2/2 pl-6 pr-12">
             <ArticleBox />
           </div>
-          <div class="h-auto w-2/2 px-12">
+          <div class="h-auto w-2/2 pl-6 pr-12">
             <ArticleBox />
           </div>
         </div>

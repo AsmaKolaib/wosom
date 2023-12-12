@@ -5,14 +5,14 @@ const index = () => {
   return (
     <section className="absolute h-screen   ">
       <div className="grid grid-cols-1 w-2/2 px-4 pt-32 h-full">
-        <div className=" font-main text-4xl font-bold capitalize leading-[1] z-10">
+        <div className=" font-main text-4xl font-bold capitalize leading-[.5] z-10">
           <h1 className=" relative z-[5]">
             Seamless AI Data Collection{" "}
-            <span className="text-[#FFFFFF] font-mea lowercase font-light text-5xl ml-[-13px] z-[-3] relative">
+            <span className="text-[#FFFFFF] font-mea lowercase font-light text-8xl ml-[-13px] z-[-3] relative">
               and
             </span>
           </h1>
-          <h1 className=" text-center leading-[.5]">Labeling </h1>
+          <h1 className=" text-center leading-[1]">Labeling </h1>
         </div>
 
         <div className="flex justify-center items-center ">

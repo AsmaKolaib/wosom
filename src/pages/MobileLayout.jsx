@@ -18,8 +18,8 @@ const MoblieLayout = () => {
       <Services />
       <Prices />
       <Articles />
-      <FAQ />   <Contact />
-      <Articles />
+      <FAQ />  
+       <Contact />
       <Footer />
     </>
   );
