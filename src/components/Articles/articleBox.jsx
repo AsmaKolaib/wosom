@@ -3,21 +3,23 @@ import React from "react";
 const ArticleBox = () => {
   return (
     <div className="relative">
-      <div className="w-[86px] h-[86px] md:w-[66px] md:h-[66px] xl:w-[76px] xl:h-[76px] absolute top-[-25px] right-[-22px]">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="100%"
-          height="100%"
-          viewBox="0 0 86 86"
-          fill="none"
-          className=" "
-        >
-          <circle cx="43" cy="43" r="43" fill="#D9D9D9" />
-          <path
-            d="M51.5858 54.4142C52.3668 55.1953 53.6332 55.1953 54.4142 54.4142C55.1953 53.6332 55.1953 52.3668 54.4142 51.5858L51.5858 54.4142ZM32 30C30.8954 30 30 30.8954 30 32L30 50C30 51.1046 30.8954 52 32 52C33.1046 52 34 51.1046 34 50L34 34L50 34C51.1046 34 52 33.1046 52 32C52 30.8954 51.1046 30 50 30L32 30ZM54.4142 51.5858L33.4142 30.5858L30.5858 33.4142L51.5858 54.4142L54.4142 51.5858Z"
-            fill="black"
-          />
-        </svg>
+      <div className="w-[66px] h-[76px] sm:w-[76px] sm:h-[86px] md:w-[66px] md:h-[66px] xl:w-[76px] xl:h-[76px] absolute top-[-25px] right-[-22px]">
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="100%"
+            height="100%"
+            viewBox="0 0 86 86"
+            fill="none"
+            className=" "
+          >
+            <circle cx="43" cy="43" r="43" fill="#D9D9D9" />
+            <path
+              d="M51.5858 54.4142C52.3668 55.1953 53.6332 55.1953 54.4142 54.4142C55.1953 53.6332 55.1953 52.3668 54.4142 51.5858L51.5858 54.4142ZM32 30C30.8954 30 30 30.8954 30 32L30 50C30 51.1046 30.8954 52 32 52C33.1046 52 34 51.1046 34 50L34 34L50 34C51.1046 34 52 33.1046 52 32C52 30.8954 51.1046 30 50 30L32 30ZM54.4142 51.5858L33.4142 30.5858L30.5858 33.4142L51.5858 54.4142L54.4142 51.5858Z"
+              fill="black"
+            />
+          </svg>
+        </a>
       </div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -38,15 +40,15 @@ const ArticleBox = () => {
           y="0"
           width="100%"
           height="100%"
-          className="p-0 m-0"
+          className="p-0 m-0  pt-8 md:pt-0"
         >
-          <p className=" font-main font-bold text-2xl pt-20 pl-10 pr-20 mb-5    ">
+          <p className=" font-main font-bold text-lg md:text-2xl pt-20 pl-10 pr-20 mb-5    ">
             Artificial Intelligence: A Revolutionary Force Transforming Our
             World
           </p>
 
           <div className="pr-5 border-t-2  border-t-slate-400 "></div>
-          <p className=" font-mainLight text-lg pt-5 pl-10 pr-20   ">
+          <p className=" font-mainLight text-base md:text-lg pt-5 pl-10 pr-20   ">
             Delve into the fascinating realm of artificial intelligence (AI) and
             explore its profound impact on our world. Discover how AI is
             revolutionizing industries, reshaping human interactions, and

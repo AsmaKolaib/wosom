@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import DesktopLayout from "./DesktopLayout";
-import MoblieLayout from "./MoblieLayout";
+import MobileLayout from "./MobileLayout";
 const Home = () => {
   const [width, setWidth] = useState(window.innerWidth);
   const breakpoint = 620;
@@ -12,7 +12,7 @@ const Home = () => {
     return () => window.removeEventListener("resize", handleWindowResize);
   }, []);
 
-  return width < breakpoint ? <MoblieLayout /> : <DesktopLayout />;
+  return width < breakpoint ? <MobileLayout /> : <DesktopLayout />;
 };
 
 export default Home;
