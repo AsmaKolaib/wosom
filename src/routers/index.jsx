@@ -20,6 +20,7 @@ import FeaturesM from "../components/Features/index-m";
 import ServicesM from "../components/Services/index-m";
 import PricesM from "../components/Prices/index-m";
 import ContactM from "../components/Contact/index-m";
+import FAQM from "../components/FAQ/index-m";
 export const AppRouter = () => {
   return (
     <Routes>
@@ -42,6 +43,7 @@ export const AppRouter = () => {
       <Route path="/services-m" element={<ServicesM/>} />
       <Route path="/prices-m" element={<PricesM/>} />
       <Route path="/contact-m" element={<ContactM/>} />
+      <Route path="/faq-m" element={<FAQM />} />
       {/* <Route path="/login" element={} /> */}
       <Route path="*" element={<NotFound />} />
     </Routes>
