@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 
 const MoblieLayout = () => {
@@ -21,6 +21,9 @@ const MoblieLayout = () => {
         </li>
         <li className="text-blue-800 underline">
           <NavLink to="/services-m">Services</NavLink>
+        </li>
+        <li className="text-blue-800 underline">
+          <NavLink to="/prices-m">Prices</NavLink>
         </li>
       </ul>
     </div>

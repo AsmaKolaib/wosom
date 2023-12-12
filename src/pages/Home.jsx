@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
 import DesktopLayout from "./DesktopLayout";
 import MoblieLayout from "./MoblieLayout";
 const Home = () => {
