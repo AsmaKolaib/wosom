@@ -5,6 +5,7 @@ module.exports = {
     fontFamily: {
       main: ["Helvetica", "sans-serif"],
       mainLight: ["Helvetica-light", "sans-serif"],
+      mea: ["Mea", "sans-serif"],
     },
     extend: {
       colors: {

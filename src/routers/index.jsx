@@ -8,7 +8,7 @@ import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 import Header from "../components/Header";
-
+import Hero from "../components/Hero";
 import Partners from "../components/Partners/index";
 export const AppRouter = () => {
   return (
@@ -22,6 +22,7 @@ export const AppRouter = () => {
       <Route path="/contact-us" element={<Contact/>} />
       <Route path="/header" element={<Header/>} />
       <Route path="/partners" element={<Partners/>} />
+      {/* <Route path="/hero" element={<Hero/>} /> */}
       {/* <Route path="/login" element={} /> */}
       <Route path="*" element={<NotFound />} />
     </Routes>

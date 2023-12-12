@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import Hero from "../Hero";
 const Header = () => {
   const [nav, setNav] = useState(false);
   const handleNav = () => {
@@ -17,8 +18,8 @@ const Header = () => {
 
   return (
     <>
-      <nav className="relative flex w-full  justify-between py-2 text-black  hover:text-neutral-700 focus:text-neutral-700 lg:py-4">
-        <div className="flex  w-full justify-between  px-3 font-main font-bold text-lg">
+      <nav className=" relative flex w-full justify-between  text-black  hover:text-neutral-700  ">
+        <div className="flex z-50 w-full justify-between py-2 px-3 font-main font-bold text-lg lg:py-2">
           <div className="ml-10 flex w-2/4  justify-start items-center">
             <a className=" bg-white rounded-[8px]  px-6 py-3" href="#">
               <svg
@@ -89,6 +90,7 @@ const Header = () => {
             </span>
           </div>
         </div>
+        <Hero />
       </nav>
       <div
         className={`pt-20 w-[292px] h-fit bg-[#adadad] rounded-[20px] p-3 absolute  right-[51px] transition ease-in duration-[1s]	
@@ -108,6 +110,7 @@ const Header = () => {
           ))}
         </div>
       </div>
+     
     </>
   );
 };

@@ -28,6 +28,9 @@ const Home = () => {
         <li className="text-blue-800 underline">
           <NavLink to="/partners">partners</NavLink>
         </li>
+        {/* <li className="text-blue-800 underline">
+          <NavLink to="/hero">Hero</NavLink>
+        </li> */}
       </ul>
     </div>
   );

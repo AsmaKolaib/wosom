@@ -17,6 +17,11 @@
     font-family: "Helvetica-light";
     src: url("assets/fonts/helvetica-light.ttf") format("TrueType");
   }
+  
+  @font-face {
+    font-family: "Mea";
+    src: url("assets/fonts/MeaCulpa-Regular.ttf") format("TrueType");
+  }
 
   body{
     @apply bg-[#F1F0EC]
