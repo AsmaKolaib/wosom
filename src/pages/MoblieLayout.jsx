@@ -25,6 +25,9 @@ const MoblieLayout = () => {
         <li className="text-blue-800 underline">
           <NavLink to="/prices-m">Prices</NavLink>
         </li>
+        <li className="text-blue-800 underline">
+            <NavLink to="/contact-m">Contact   </NavLink>
+          </li>
       </ul>
     </div>
   );

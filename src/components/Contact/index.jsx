@@ -3,9 +3,9 @@ import ContactForm from "./contactForm";
 const index = () => {
   return (
     <div className=" flex items-center justify-center  px-4 py-10 sm:px-6 lg:px-8 lg:py-4 h-screen ">
-      <div className="m-12 grid items-center justify-center  lg:grid-cols-2 ">
-        <div className="flex flex-col justify-between items-center divide-y divide-gray-200 h-full pr-44 ">
-          <div className="   w-full mt-10 ">
+      <div className="m-12 grid gap-x-40 items-center justify-center  lg:grid-cols-3 ">
+        <div className=" flex flex-col justify-between items-center divide-y divide-gray-200 h-full  ">
+          <div className=" w-full mt-10 ">
             <h1 className="font-main font-bold text-3xl">
               We're Here to <br /> Help
             </h1>
@@ -16,14 +16,14 @@ const index = () => {
             </p>
           </div>
 
-          <div className=" bg-white  rounded-[8px] w-full p-10">
+          <div className=" bg-white  rounded-[16px] w-full p-10 text-xs font-bold">
             <ul>
-              <li className="flex items-center bg-[#F1F0EC] px-8 py-2 rounded-[16px] mb-4">
+              <li className="flex items-center bg-[#F1F0EC] px-4 py-2 rounded-[8px] mb-4">
                 <span className="mr-5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
+                    width="20"
+                    height="20"
                     viewBox="0 0 24 24"
                     fill="none"
                   >
@@ -37,7 +37,7 @@ const index = () => {
                 </span>
                 @wosom.ai
               </li>
-              <li className=" flex items-center  bg-[#F1F0EC] px-8 py-2 rounded-[16px] mb-4">
+              <li className=" flex items-center  bg-[#F1F0EC] px-4 py-2 rounded-[8px] mb-4">
                 <span className="mr-5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +61,7 @@ const index = () => {
                 </span>
                 @wosom.ai
               </li>
-              <li className="flex items-center bg-[#F1F0EC] px-8 py-2 rounded-[16px] mb-4">
+              <li className="flex items-center bg-[#F1F0EC] px-4 py-2 rounded-[8px] mb-4">
                 <span className="mr-5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +84,7 @@ const index = () => {
             </ul>
           </div>
         </div>
-        <div className=" bg-[#5933EF] py-16 px-7  rounded-[26px]">
+        <div className=" col-span-2 bg-[#5933EF] py-16 px-32  rounded-[26px] ">
           <ContactForm />
         </div>
       </div>
