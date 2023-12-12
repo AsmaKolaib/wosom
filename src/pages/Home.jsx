@@ -31,6 +31,9 @@ const Home = () => {
         <li className="text-blue-800 underline">
           <NavLink to="/services">Services</NavLink>
         </li>
+        <li className="text-blue-800 underline">
+          <NavLink to="/features">Features</NavLink>
+        </li>
       </ul>
     </div>
   );

@@ -10,6 +10,7 @@ import Contact from "../components/Contact";
 import Header from "../components/Header";
 import Services from "../components/Services";
 import Partners from "../components/Partners/index";
+import Features from "../components/Features";
 export const AppRouter = () => {
   return (
     <Routes>
@@ -23,6 +24,7 @@ export const AppRouter = () => {
       <Route path="/header" element={<Header/>} />
       <Route path="/partners" element={<Partners/>} />
       <Route path="/services" element={<Services/>} />
+      <Route path="/features" element={<Features/>} />
       {/* <Route path="/login" element={} /> */}
       <Route path="*" element={<NotFound />} />
     </Routes>
