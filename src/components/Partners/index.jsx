@@ -16,55 +16,64 @@ const index = () => {
   };
 
   return (
-    <div className="flex justify-around m-auto w-[95%] my-5 h-screen">
-      <div className="bg-white flex flex-col justify-between w-[90%] mx-2 rounded-[40px] p-10  pr-20">
-        <div className="mt-4 h-full w-2/4">
-          <h1 className=" font-main  font-semibold text-3xl">
-            Our Commitment to Delivering a Trusted AI Experience{" "}
-          </h1>
-          <p className=" font-mainLight text-base pt-4">
-            Partners how trust us
-          </p>
-        </div>
+    <section>
+      <div className="flex justify-around m-auto w-[95%] my-5 h-screen">
+        <div className="bg-white flex flex-col justify-between w-[90%] mx-2 rounded-[40px] p-10  pr-20">
+          <div className="mt-4 h-full w-2/4">
+            <h1 className=" font-main  font-semibold text-3xl">
+              Our Commitment to Delivering a Trusted AI Experience{" "}
+            </h1>
+            <p className=" font-mainLight text-base pt-4">
+              Partners how trust us
+            </p>
+          </div>
 
-        <div className="grid grid-cols-3 gap-4">
-          {Object.entries(partners).map(([key, value]) => (
-            <div className=" relative flex flex-col justify-center items-center rounded-[26px] p-12 bg-[#F1F0EC]">
-              <h3 className=" absolute bg-white font-main text-sm rounded-[36px] px-4 py-1 top-2 right-6 ">
-                {key}
-              </h3>
-              <img src={value} alt={key} className={`${key === "King Saud" ? "w-[166px] h-[56px]" : "w-[80px] h-[70px]"}`} />
-            </div>
-          ))}
-          <div className=" relative flex flex-col justify-between items-start rounded-[26px] py-4 pl-6 pr-0 bg-black">
-          <span className="bg-white w-full rounded-l-full">
-              <svg
-                width="46"
-                height="46"
-                viewBox="0 0 46 46"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="ml-2 my-1"
-              >
-                <rect width="46" height="46" rx="23" fill="#F1F0EC" />
-                <path
-                  d="M30.3694 30.7761C30.798 31.1244 31.4278 31.0592 31.7761 30.6306C32.1244 30.202 32.0592 29.5722 31.6306 29.2239L30.3694 30.7761ZM14.8971 16.0053C14.3477 16.0621 13.9485 16.5535 14.0053 17.1029L14.9314 26.0551C14.9882 26.6045 15.4796 27.0037 16.029 26.9469C16.5783 26.8901 16.9776 26.3987 16.9208 25.8493L16.0976 17.8918L24.0551 17.0686C24.6045 17.0118 25.0037 16.5204 24.9469 15.971C24.8901 15.4217 24.3987 15.0224 23.8493 15.0792L14.8971 16.0053ZM31.6306 29.2239L15.6306 16.2239L14.3694 17.7761L30.3694 30.7761L31.6306 29.2239Z"
-                  fill="black"
+          <div className="grid grid-cols-3 gap-4">
+            {Object.entries(partners).map(([key, value]) => (
+              <div className=" relative flex flex-col justify-center items-center rounded-[26px] p-12 bg-[#F1F0EC]">
+                <h3 className=" absolute bg-white font-main text-sm rounded-[36px] px-4 py-1 top-2 right-6 ">
+                  {key}
+                </h3>
+                <img
+                  src={value}
+                  alt={key}
+                  className={`${
+                    key === "King Saud"
+                      ? "w-[176px] h-[66px]"
+                      : "w-[80px] h-[70px]"
+                  }`}
                 />
-              </svg>
-            </span>
-            <h3 className="  text-white font-main text-xl rounded-[36px]  ">
-            Be one of out <br/> partners 
-            </h3>
-
+              </div>
+            ))}
+            <div className=" relative flex flex-col justify-between items-start rounded-[26px] py-4 pl-6 pr-0 bg-black">
+              <span className="bg-white w-full rounded-l-full">
+                <svg
+                  width="46"
+                  height="46"
+                  viewBox="0 0 46 46"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="ml-2 my-1"
+                >
+                  <rect width="46" height="46" rx="23" fill="#F1F0EC" />
+                  <path
+                    d="M30.3694 30.7761C30.798 31.1244 31.4278 31.0592 31.7761 30.6306C32.1244 30.202 32.0592 29.5722 31.6306 29.2239L30.3694 30.7761ZM14.8971 16.0053C14.3477 16.0621 13.9485 16.5535 14.0053 17.1029L14.9314 26.0551C14.9882 26.6045 15.4796 27.0037 16.029 26.9469C16.5783 26.8901 16.9776 26.3987 16.9208 25.8493L16.0976 17.8918L24.0551 17.0686C24.6045 17.0118 25.0037 16.5204 24.9469 15.971C24.8901 15.4217 24.3987 15.0224 23.8493 15.0792L14.8971 16.0053ZM31.6306 29.2239L15.6306 16.2239L14.3694 17.7761L30.3694 30.7761L31.6306 29.2239Z"
+                    fill="black"
+                  />
+                </svg>
+              </span>
+              <h3 className="  text-white font-main text-xl rounded-[36px]  ">
+                Be one of out <br /> partners
+              </h3>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div  className="bg-[#5933EF] w-2/6 mx-2 rounded-[40px]">
-      <PressStart />
+        <div className="bg-[#5933EF] w-2/6 mx-2 rounded-[40px]">
+          <PressStart />
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

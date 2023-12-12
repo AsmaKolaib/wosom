@@ -8,11 +8,11 @@ const index = () => {
         <div className=" font-main text-4xl font-bold capitalize leading-[1] z-10">
           <h1 className=" relative z-[5]">
             Seamless AI Data Collection{" "}
-            <span className="text-[#FFFFFF] font-mea lowercase text-5xl ml-[-13px] z-[-3] relative">
+            <span className="text-[#FFFFFF] font-mea lowercase font-light text-5xl ml-[-13px] z-[-3] relative">
               and
             </span>
           </h1>
-          <h1 className=" text-right leading-[.5]">Labeling </h1>
+          <h1 className=" text-center leading-[.5]">Labeling </h1>
         </div>
 
         <div className="flex justify-center items-center ">
@@ -52,15 +52,20 @@ const index = () => {
           </div>
         </div>
 
-        <div className="self-center">
-          <a
+        <div  >
+        <div className=" flex flex-col text-base my-4 ">
+              <p>
+                We save time, money, and resources by automating processes that
+                are tedious and prone to errors
+              </p>
+              <a
             href="#"
-            className="flex justify-center items-center font-main font-bold"
+            className=" flex justify-start items-center font-main font-bold  "
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="46"
-              height="66"
+              width="36"
+              height="56"
               viewBox="0 0 86 86"
               fill="none"
               className="mr-2"
@@ -74,6 +79,8 @@ const index = () => {
             </svg>
             Try it for free now
           </a>
+            </div>
+
         </div>
       </div>
     </section>

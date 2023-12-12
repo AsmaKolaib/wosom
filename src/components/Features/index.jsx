@@ -16,7 +16,7 @@ export const BoxFeature = ({ img, title }) => {
 
 const index = () => {
   return (
-    <section className=" px-20 my-10">
+    <section className=" px-20 my-20 h-screen">
       <div className="h-full w-full">
         <div className="grid gap-6 w-full  h-full  lg:grid-cols-2 relative  ">
           <div className="flex flex-col justify-between w-2/2 h-full bg-white rounded-[40px] p-20">

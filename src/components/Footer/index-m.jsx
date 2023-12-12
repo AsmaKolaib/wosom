@@ -11,7 +11,8 @@ const index = () => {
     " contact": " contact",
   };
   return (
-    <footer className="relative bg-black text-[#D2D2D2]  pt-8 pb-6 mt-5">
+  
+    <footer className="relative bg-black text-[#D2D2D2]  pt-8 pb-6 mt-5 h-fit">
       <div className="container mx-auto ">
         <div className="px-8">
           <img src={logo} alt="Wosom" width={80} height={0} />

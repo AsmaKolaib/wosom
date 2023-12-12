@@ -3,9 +3,9 @@ import FAQSection from "./faqSection";
 import { questions } from "./questions";
 const index = () => {
   return (
-    <section className=" px-4 my-8 h-full w-full">
-      <div className="flex flex-col justify-betwee ">
-        <div className="w-full  pr-3 ">
+    <section className=" px-4 my-8 h-screen w-full">
+      <div className="flex flex-col justify-evenly h-full">
+        <div className="w-full  pr-3 mb-4 ">
           <h1 className="font-main font-bold text-xl sm:text-2xl">
             Frequently Asked <br /> Questions
           </h1>

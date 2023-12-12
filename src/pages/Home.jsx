@@ -10,7 +10,7 @@ const Home = () => {
 
     // Return a function from the effect that removes the event listener
     return () => window.removeEventListener("resize", handleWindowResize);
-  }, []);
+  }, [width]);
 
   return width < breakpoint ? <MobileLayout /> : <DesktopLayout />;
 };

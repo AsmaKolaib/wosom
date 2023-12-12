@@ -4,7 +4,7 @@ import HeroImg from "../../assets/imags/hero.jpg";
 export const BoxService = ({ img, text, title }) => {
   return (
     <div className=" bg-white rounded-[14px] overflow-hidden px-6 pb-4 pt-6 h-fit">
-      <img src={img} alt="" className="rounded-[14px] w-full h-[200px]" />
+      <img src={img} alt="" className="rounded-[14px] w-full h-[200px] object-cover" />
       <div className="py-4">
         <div className="font-bold text-xl mb-2">{title}</div>
         <p className="text-gray-700 text-base">{text}</p>

@@ -17,7 +17,7 @@ const Header = () => {
   };
 
   return (
-    <section className="relative">
+    <section className="relative h-screen">
       <section className="  relative flex w-full justify-between  text-black  hover:text-neutral-700  ">
         <nav className="flex z-50 w-full justify-between py-2 px-3 font-main font-bold text-lg lg:py-2">
           <div className="ml-10 flex w-2/4  justify-start items-center">
@@ -88,27 +88,30 @@ const Header = () => {
               </a>
             </span>
           </div>
-          <div
-            className={`pt-20 w-[292px] h-fit bg-[#adadad] rounded-[20px] p-3 absolute  right-[51px] transition ease-in duration-[1s]	
-        ${nav ? "  top-[17px]" : "top-[-1000px]"}
-      `}
-          >
+
+          {nav && (
             <div
-              style={{ direction: "rtl" }}
-              className="grid grid-cols-2 gap-x-4  gap-y-2 w-full text-center 	"
+              className={`pt-20 w-[292px] h-fit bg-[#adadad] rounded-[20px] p-3 absolute  right-[51px] transition ease-in duration-[1s]	
+              ${nav ? "  top-[17px]" : "top-[-1000px]"}
+            `}
             >
-              {Object.entries(navLinks).map(([key, value]) => (
-                <div className="bg-white  rounded-[8px]  px-8 py-3 ">
-                  <NavLink
-                    to="#"
-                    className="font-main font-bold hover:opacity-90"
-                  >
-                    {value}
-                  </NavLink>
-                </div>
-              ))}
+              <div
+                style={{ direction: "rtl" }}
+                className="grid grid-cols-2 gap-x-4  gap-y-2 w-full text-center 	"
+              >
+                {Object.entries(navLinks).map(([key, value]) => (
+                  <div className="bg-white  rounded-[8px]  px-8 py-3 ">
+                    <NavLink
+                      to="#"
+                      className="font-main font-bold hover:opacity-90"
+                    >
+                      {value}
+                    </NavLink>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
+          )}
         </nav>
         <Hero />
       </section>

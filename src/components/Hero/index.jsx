@@ -7,7 +7,7 @@ const index = () => {
       <div className="h-full">
         <div className="grid  h-full gap-0 lg:grid-cols-2 relative  ">
           <div className="  w-2/2   p-0 h-[100%] ">
-            <div className=" absolute  left-0 top-0  h-[100%] ">
+            <div className=" absolute left-0 top-0 h-[100%] p-4 ">
               <svg
                 // xmlns="http://www.w3.org/2000/svg"
                 // width="801"
@@ -69,12 +69,12 @@ const index = () => {
           <div className="grid grid-cols-1 w-2/2 px-10 pt-32 ">
             <div className=" font-main text-7xl font-bold capitalize leading-[0] z-10">
               <h1 className=" relative z-[5]">
-                Seamless AI Data Collection{" "}
-                <span className="text-[#FFFFFF] font-mea lowercase text-9xl ml-[-23px] z-[-3] relative">
+                Seamless AI Data Collection
+                <span className="text-[#FFFFFF] font-mea lowercase font-light text-9xl ml-[-23px] z-[-3] relative">
                   and
                 </span>
               </h1>
-              <h1 className=" text-right leading-[.5]">Labeling </h1>
+              <h1 className=" text-center leading-[.5] pl-20">Labeling </h1>
             </div>
             <div className="w-2/4 text-base my-4">
               <p>

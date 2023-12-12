@@ -15,6 +15,7 @@ const index = () => {
   };
 
   return (
+    <section >
     <div className="flex justify-around m-auto w-full my-5 ">
       <div className="bg-white flex flex-col justify-between w-full mx-2 rounded-[14px] p-4">
         <div className="mt-4 h-full mb-20 ">
@@ -69,6 +70,7 @@ const index = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

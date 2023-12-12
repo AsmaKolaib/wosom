@@ -17,7 +17,7 @@ const Header = () => {
   };
 
   return (
-    <section className="relative px-4  py-3">
+    <section className="relative px-4 py-3 h-screen">
       <section className="  relative flex w-full justify-between text-black  hover:text-neutral-700  ">
         <nav className="flex z-50 w-full justify-between py-2 font-main font-bold text-sm ">
           <div className=" flex w2/12  justify-start items-center">
