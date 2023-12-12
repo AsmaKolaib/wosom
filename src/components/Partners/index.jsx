@@ -4,7 +4,8 @@ import kindAbdelaziz from "../../assets/imags/kind Abdelaziz.png";
 import sdara from "../../assets/imags/sdara.png";
 import KingSaud from "../../assets/imags/King saud.png";
 import MohamedBinZayed from "../../assets/imags/Mohamed bin zayed.png";
-import PhysicsAnimation from './fallbox';
+import { PressStart, generateRandomWord } from "./fallbox";
+// import PhysicsAnimation from './fallbox';
 const index = () => {
   const partners = {
     ELM: ELM,
@@ -44,8 +45,8 @@ const index = () => {
         </div>
       </div>
 
-      <div id="animation-container" className="bg-[#5933EF] w-2/6 mx-2 rounded-[40px]">
-      <PhysicsAnimation />
+      <div  className="bg-[#5933EF] w-2/6 mx-2 rounded-[40px]">
+      <PressStart />
       </div>
     </div>
   );

@@ -6,14 +6,14 @@ const Header = () => {
     setNav(!nav);
   };
   const navLinks = {
-    "home" : "Home",
-    "service" : "Service",
-    "market" : "Market",
-    "pricing" : "Pricing",
-    "blog" : "Blog",
-    "contact" : "Contact",
-    "douc" : "Douc",
-  }
+    home: "Home",
+    service: "Service",
+    market: "Market",
+    pricing: "Pricing",
+    blog: "Blog",
+    contact: "Contact",
+    douc: "Douc",
+  };
 
   return (
     <>
@@ -44,19 +44,46 @@ const Header = () => {
             <span className="bg-white rounded-[8px]  px-4 py-2 ">
               <a
                 href="#"
-                className=" flex justify-between items-center "
+                className=" flex justify-between items-center px-1 "
                 onClick={handleNav}
               >
-                {nav ? "Close" : "Menu"}
+                {nav ? "Close   " : "Menu"}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="36"
+                  width="30"
                   height="36"
                   viewBox="0 0 41 41"
                   fill="none"
-                  className="ml-3"
+                  className="ml-2"
+                   
                 >
-                  <circle cx="20.5" cy="20.5" r="20.5" fill="#F3F3F3" />
+                  <g clip-path="url(#clip0_470_211)">
+                    <path
+                      d="M41 20.5C41 31.8218 31.8218 41 20.5 41C9.17816 41 0 31.8218 0 20.5C0 9.17816 9.17816 0 20.5 0C31.8218 0 41 9.17816 41 20.5Z"
+                      fill="black"
+                    />
+                    <path
+                      d="M18 15.5C18 17.433 16.433 19 14.5 19C12.567 19 11 17.433 11 15.5C11 13.567 12.567 12 14.5 12C16.433 12 18 13.567 18 15.5Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M30 15.5C30 17.433 28.433 19 26.5 19C24.567 19 23 17.433 23 15.5C23 13.567 24.567 12 26.5 12C28.433 12 30 13.567 30 15.5Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M18 26.5C18 28.433 16.433 30 14.5 30C12.567 30 11 28.433 11 26.5C11 24.567 12.567 23 14.5 23C16.433 23 18 24.567 18 26.5Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M30 26.5C30 28.433 28.433 30 26.5 30C24.567 30 23 28.433 23 26.5C23 24.567 24.567 23 26.5 23C28.433 23 30 24.567 30 26.5Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_470_211">
+                      <rect width="41" height="41" fill="white" />
+                    </clipPath>
+                  </defs>
                 </svg>
               </a>
             </span>
@@ -64,22 +91,21 @@ const Header = () => {
         </div>
       </nav>
       <div
-        className={`pt-20 w-[292px] h-fit bg-[#adadad] rounded-[20px] p-3 absolute top-[16px] right-[51px]
-        ${nav ? "  top -0" : "top-[-100%]"}
+        className={`pt-20 w-[292px] h-fit bg-[#adadad] rounded-[20px] p-3 absolute  right-[51px] transition ease-in duration-[1s]	
+        ${nav ? "  top-[17px]" : "top-[-1000px]"}
       `}
       >
         <div
           style={{ direction: "rtl" }}
           className="grid grid-cols-2 gap-x-4  gap-y-2 w-full text-center 	"
         >
-                    {Object.entries(navLinks)
-                    .map(([key, value]) => (
-                      <div className="bg-white  rounded-[8px]  px-8 py-3 ">
-                       <NavLink     to="#" className="font-main font-bold hover:opacity-90">
-                       {value}
-                        </NavLink>
-                    </div>
-                    ))}
+          {Object.entries(navLinks).map(([key, value]) => (
+            <div className="bg-white  rounded-[8px]  px-8 py-3 ">
+              <NavLink to="#" className="font-main font-bold hover:opacity-90">
+                {value}
+              </NavLink>
+            </div>
+          ))}
         </div>
       </div>
     </>
