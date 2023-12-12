@@ -16,28 +16,38 @@ const index = () => {
   };
 
   return (
-    <div className="flex justify-around m-auto w-[95%] my-5 h-screen">
-      <div className="bg-white flex flex-col justify-between w-[90%] mx-2 rounded-[40px] p-10  pr-20">
-        <div className="mt-4 h-full w-2/4">
+    <div className="flex justify-around m-auto w-full my-5 ">
+      <div className="bg-white flex flex-col justify-between w-full mx-2 rounded-[14px] p-4">
+        <div className="mt-4 h-full mb-20 ">
           <h1 className=" font-main  font-semibold text-3xl">
-            Our Commitment to Delivering a Trusted AI Experience{" "}
+            Our Commitment to <br />
+            Delivering a Trusted <br />
+            AI Experience
           </h1>
           <p className=" font-mainLight text-base pt-4">
             Partners how trust us
           </p>
         </div>
 
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 gap-4">
           {Object.entries(partners).map(([key, value]) => (
-            <div className=" relative flex flex-col justify-center items-center rounded-[26px] p-12 bg-[#F1F0EC]">
+            <div className="h-[160px] relative flex flex-col justify-center items-center rounded-[8px] p-12 bg-[#F1F0EC]">
               <h3 className=" absolute bg-white font-main text-sm rounded-[36px] px-4 py-1 top-2 right-6 ">
                 {key}
               </h3>
-              <img src={value} alt={key} className={`${key === "King Saud" ? "w-[166px] h-[56px]" : "w-[80px] h-[70px]"}`} />
+              <img
+                src={value}
+                alt={key}
+                className={`${
+                  key === "King Saud"
+                    ? "w-[166px] h-[54px]"
+                    : "w-[80px] h-[70px]"
+                }`}
+              />
             </div>
           ))}
-          <div className=" relative flex flex-col justify-between items-start rounded-[26px] py-4 pl-6 pr-0 bg-black">
-          <span className="bg-white w-full rounded-l-full">
+          <div className=" relative flex flex-col justify-between items-end rounded-[26px]  py-4 pl-8 pr-0 bg-black">
+            <span className="bg-white w-full rounded-l-full">
               <svg
                 width="46"
                 height="46"
@@ -53,16 +63,11 @@ const index = () => {
                 />
               </svg>
             </span>
-            <h3 className="  text-white font-main text-xl rounded-[36px]  ">
-            Be one of out <br/> partners 
+            <h3 className="  text-white text-left font-main text-xl rounded-[36px] ">
+              Be one of out partners
             </h3>
-
           </div>
         </div>
-      </div>
-
-      <div  className="bg-[#5933EF] w-2/6 mx-2 rounded-[40px]">
-      <PressStart />
       </div>
     </div>
   );
