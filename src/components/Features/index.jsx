@@ -3,10 +3,10 @@ import TempImg from "../../assets/imags/img.jpg";
 
 export const BoxFeature = ({ img, title }) => {
   return (
-    <div className=" relative max-w-sm bg-white rounded-[40px] h-fit">
-      <img src={img} alt="" className="rounded-[16px] w-full h-[200px]" />
+    <div className=" relative max-w-sm bg-white rounded-[16px] h-fit ">
+      <img src={img} alt="" className="rounded-[16px] w-full object-cover " />
       <div className="  w-full text-white text-center px-20 ">
-        <div className="absolute bottom-0 w-[90%] left-[20px] font-bold text-base mb-2 rounded-[17px] px-6 py-2   bg-black">
+        <div className=" text-xs absolute bottom-0 w-[90%] left-[10px] lg:left-[20px]  lg:text-base mb-2 rounded-[17px] px-6 py-2   bg-black">
           {title}
         </div>
       </div>
@@ -16,20 +16,20 @@ export const BoxFeature = ({ img, title }) => {
 
 const index = () => {
   return (
-    <section className=" px-20 my-20 h-screen">
+    <section className=" py-4 md:py-12 lg:py-14 xl:py-30   h-screen">
       <div className="h-full w-full">
-        <div className="grid gap-6 w-full  h-full  lg:grid-cols-2 relative  ">
-          <div className="flex flex-col justify-between w-2/2 h-full bg-white rounded-[40px] p-20">
-            <div className="w-2/3  ">
-              <h1 className="font-main font-bold text-4xl">
+        <div className="flex flex-row  w-full  h-full  relative  ">
+          <div className=" mx-4 flex flex-col justify-between w-2/4 h-full bg-white rounded-[40px] p-6 pt-8 lg:p-14">
+            <div className=" w-full lg:w-2/3  ">
+              <h1 className="font-main font-bold text-xl xl:text-4xl">
                 Label Faster with <br /> Wasom AI
               </h1>
-              <p className=" font-mainLight w-2/2 text-base leading-[1.1] mt-5">
+              <p className=" font-mainLight w-2/2  text-sm lg:text-base leading-[1.1] mt-5">
                 Unlock rapid, precise, and scalable annotation capabilities with
                 our advanced AutoAnnotate feature
               </p>
             </div>
-            <div className=" w-[150px] relative  flex justify-center items-center bg-[#F1F0EC] rounded-full py-2">
+            <div className=" ml-2 w-[150px] relative  flex justify-center items-center bg-[#F1F0EC] rounded-full text-base py-2">
               <a href="#"      className="absolute top-[-20px]  left-[-25px]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +77,7 @@ const index = () => {
               </a>
             </div>
           </div>
-          <div className="grid grid-cols-2 justify-center items-center content-center gap-6 w-2/2 h-full py-10  ">
+          <div className="  grid grid-cols-2 justify-center items-center content-center gap-2 lg:gap-6 w-2/4 h-full   ">
             <BoxFeature title="AI-Powered Annotation" img={TempImg} />
             <BoxFeature title="AI-Powered Annotation" img={TempImg} />
 

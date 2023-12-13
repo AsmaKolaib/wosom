@@ -3,11 +3,11 @@ import HeroImg from "../../assets/imags/hero.jpg";
 
 const index = () => {
   return (
-    <section className="absolute h-screen   ">
+    <section className="absolute h-screen    ">
       <div className="h-full">
-        <div className="grid  h-full gap-0 lg:grid-cols-2 relative  ">
-          <div className="  w-2/2   p-0 h-[100%] ">
-            <div className=" absolute left-0 top-0 h-[100%] p-4 ">
+        <div className="grid  h-full gap-0 grid-cols-[1.3fr_1fr] relative  ">
+          <div className=" relative w-2/2  p-0 h-[100%] ">
+            <div className="md:flex md:flex-col md:justify-center h-[100%] md:pt-2  w-2/2">
               <svg
                 // xmlns="http://www.w3.org/2000/svg"
                 // width="801"
@@ -15,7 +15,8 @@ const index = () => {
                 viewBox="0 0 901 841"
                 xmlns="/#pattern"
                 // fill={HeroImg}
-                className="h-full w-[100%] p-0 "
+                className=" w-[96%] p-0 "
+                preserveAspectRatio="none"
               >
                 <defs>
                   <pattern
@@ -33,64 +34,71 @@ const index = () => {
                     />
                   </pattern>
                 </defs>
+
                 <path
                   fill-rule="evenodd"
                   clip-rule="e venodd"
                   d="M26 0C11.6406 0 0 11.6406 0 26V815C0 829.359 11.6406 841 26 841H390.168C402.022 841 410 826.854 410 815V815V639C410 612.49 431.49 591 458 591H873V591C885.486 591 901 582.597 901 570.111V26C901 11.6406 889.359 0 875 0H26Z"
                   fill="url(#pattern)"
+                  // fill="black"
                 />
-              </svg>
-
-              <div className="absolute bottom-[110px] right-[170px]">
-                <a
-                  href="#"
-                  className="flex justify-center items-center font-main font-bold"
+                <foreignObject
+                  x="0"
+                  y="0"
+                  width="100%"
+                  height="100%"
+                  className="p-0 m-0  pt-8 md:pt-0"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="46"
-                    height="66"
-                    viewBox="0 0 86 86"
-                    fill="none"
-                    className="mr-2"
+                  <a
+                    href="#"
+                    className=" text-xl flex justify-center items-center font-main font-bold absolute bottom-[156px] right-[221px] "
                   >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M43 86C66.748 86 86 66.748 86 43C86 19.252 66.748 0 43 0C19.252 0 0 19.252 0 43C0 66.748 19.252 86 43 86ZM30 32V50C30 51.1045 30.8945 52 32 52C33.1055 52 34 51.1045 34 50V36.8281L51.5859 54.4141C52.3672 55.1953 53.6328 55.1953 54.4141 54.4141C55.1953 53.6328 55.1953 52.3672 54.4141 51.5859L36.8281 34H50C51.1055 34 52 33.1045 52 32C52 30.8955 51.1055 30 50 30H32C30.8945 30 30 30.8955 30 32Z"
-                      fill="black"
-                    />
-                  </svg>
-                  Try it for free now
-                </a>
-              </div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="86"
+                      height="66"
+                      viewBox="0 0 86 86"
+                      fill="none"
+                      className="mr-2"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M43 86C66.748 86 86 66.748 86 43C86 19.252 66.748 0 43 0C19.252 0 0 19.252 0 43C0 66.748 19.252 86 43 86ZM30 32V50C30 51.1045 30.8945 52 32 52C33.1055 52 34 51.1045 34 50V36.8281L51.5859 54.4141C52.3672 55.1953 53.6328 55.1953 54.4141 54.4141C55.1953 53.6328 55.1953 52.3672 54.4141 51.5859L36.8281 34H50C51.1055 34 52 33.1045 52 32C52 30.8955 51.1055 30 50 30H32C30.8945 30 30 30.8955 30 32Z"
+                        fill="black"
+                      />
+                    </svg>
+                    Try it for free now
+                  </a>
+                </foreignObject>
+              </svg>
             </div>
           </div>
-          <div className="grid grid-cols-1 w-2/2 px-10 pt-32 ">
-            <div className=" font-main text-7xl font-bold capitalize leading-[0] z-10">
+          <div className="flex flex-col justify-center items-center  md:justify-end md:items-start  pl-8  lg:pt-10 ">
+            <div className="  flex flex-col justify-start font-main md:text-2xl lg:text-5xl font-bold capitalize leading-[0] z-10">
               <h1 className=" relative z-[5]">
-                Seamless AI Data Collection
-                <span className="text-[#FFFFFF] font-mea lowercase font-light text-9xl ml-[-23px] z-[-3] relative">
+                Seamless AI Data  Collection
+                <span className="text-[#FFFFFF] font-mea lowercase font-light md:text-4xl  lg:text-7xl md:ml-[-7px] lg:ml-[-4px] z-[-3] relative">
                   and
                 </span>
               </h1>
-              <h1 className=" text-center leading-[.5] pl-20">Labeling </h1>
+              <h1 className=" text-center leading-[1] pl-20">Labeling </h1>
             </div>
-            <div className="w-2/4 text-base my-4">
+            <div className=" md:w-full lg:w-2/4 md:text-sm lg:text-base py-6  ">
               <p>
                 We save time, money, and resources by automating processes that
                 are tedious and prone to errors
               </p>
             </div>
-            <div className="flex justify-end items-end">
-              <div className=" flex items-end  w-2/5 h-full">
+            <div className="flex items-end justify-end">
+              <div className=" w-2/3 p-8 pb-0 pr-0 ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   // width="373"
                   // height="320"
                   viewBox="0 0 373 320"
                   fill="none"
-                  className="w-[100%] h-[80%]"
+                  className="w-[100%] h-[100%]"
                 >
                   <path
                     fill-rule="evenodd"
@@ -100,14 +108,14 @@ const index = () => {
                   />
                 </svg>
               </div>
-              <div className="flex items-end   w-2/5 h-full">
+              <div className="   w-2/3 p-2 pb-0 ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   // width="373"
                   // height="320"
                   viewBox="0 0 373 320"
                   fill="none"
-                  className="w-[100%] h-[94%]"
+                  className="w-[100%] h-[100%] "
                 >
                   <path
                     fill-rule="evenodd"

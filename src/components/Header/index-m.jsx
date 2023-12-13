@@ -17,7 +17,7 @@ const Header = () => {
   };
 
   return (
-    <section className="relative px-4 py-3 h-screen">
+    <section className="relative px-4 py-3 h-screen container m-auto">
       <section className="  relative flex w-full justify-between text-black  hover:text-neutral-700  ">
         <nav className="flex z-50 w-full justify-between py-2 font-main font-bold text-sm ">
           <div className=" flex w2/12  justify-start items-center">
@@ -37,15 +37,18 @@ const Header = () => {
             </a>
           </div>
           <div className=" z-10  flex w-2/3 items-center justify-end ">
-            <span className="bg-white rounded-[8px]  px-8 py-3 mr-2 h-[100%] ">
-              <a href="#" className="font-main font-bold hover:opacity-90">
-                Sing up
-              </a>
-            </span>
-            <span className="bg-white rounded-[8px]  px-4 py-2 ">
+            {/* <span className=" "> */}
+            <a
+              href="#"
+              className="font-main font-bold hover:opacity-90 bg-white rounded-[8px]  px-8 py-4 mr-2 h-[100%]"
+            >
+              Sing up
+            </a>
+            {/* </span> */}
+            <span className=" ">
               <a
                 href="#"
-                className=" flex justify-between items-center px-1 "
+                className=" flex justify-between items-center  bg-white rounded-[8px] px-5 py-2"
                 onClick={handleNav}
               >
                 {nav ? "Close   " : "Menu"}
@@ -89,7 +92,7 @@ const Header = () => {
             </span>
           </div>
           <div
-            className={`pt-20 w-[247px] h-fit bg-[#adadad] rounded-[20px] p-2 absolute  right-[-6px] transition ease-in duration-[1s]	
+            className={`pt-20 w-[247px] h-fit bg-[#adadad] rounded-[8px] p-2 absolute  right-[-6px] transition ease-in duration-[1s]	
         ${nav ? "  top-[-5px]" : "top-[-1000px]"}
       `}
           >
@@ -98,14 +101,14 @@ const Header = () => {
               className="grid grid-cols-2 gap-x-2  gap-y-2  text-center text-xs	"
             >
               {Object.entries(navLinks).map(([key, value]) => (
-                <div className="bg-white  rounded-[8px]  py-3 w-[100%] ">
-                  <NavLink
-                    to="#"
-                    className="font-main font-bold hover:opacity-90"
-                  >
+                <NavLink
+                  to="#"
+                  className="font-main font-bold hover:opacity-90"
+                >
+                  <div className="bg-white  rounded-[8px]  py-3 w-[100%] ">
                     {value}
-                  </NavLink>
-                </div>
+                  </div>
+                </NavLink>
               ))}
             </div>
           </div>

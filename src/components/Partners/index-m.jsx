@@ -16,7 +16,7 @@ const index = () => {
 
   return (
     <section >
-    <div className="flex justify-around m-auto w-full my-5 ">
+    <div className="flex justify-around  w-full my-5 ">
       <div className="bg-white flex flex-col justify-between w-full mx-2 rounded-[14px] p-4">
         <div className="mt-4 h-full mb-20 ">
           <h1 className=" font-main  font-semibold text-3xl">
@@ -32,7 +32,7 @@ const index = () => {
         <div className="grid grid-cols-2 gap-4">
           {Object.entries(partners).map(([key, value]) => (
             <div className="h-[160px] relative flex flex-col justify-center items-center rounded-[8px] p-12 bg-[#F1F0EC]">
-              <h3 className=" absolute bg-white font-main text-sm rounded-[36px] px-4 py-1 top-2 right-6 ">
+              <h3 className=" absolute bg-white font-main text-xs rounded-[36px] px-4 py-1 top-2 right-6 ">
                 {key}
               </h3>
               <img
@@ -40,13 +40,13 @@ const index = () => {
                 alt={key}
                 className={`${
                   key === "King Saud"
-                    ? "w-[176px] h-[54px]"
+                    ? "w-[176px] h-[44px]"
                     : "w-[80px] h-[70px]"
                 }`}
               />
             </div>
           ))}
-          <div className=" relative flex flex-col justify-between items-end rounded-[26px]  py-4 pl-8 pr-0 bg-black">
+          <div className=" relative flex flex-col justify-between items-end rounded-[8px]  py-4 pl-8 pr-0 bg-black">
             <span className="bg-white w-full rounded-l-full">
               <svg
                 width="46"
@@ -63,7 +63,7 @@ const index = () => {
                 />
               </svg>
             </span>
-            <h3 className="  text-white text-left font-main text-xl rounded-[36px] ">
+            <h3 className="  text-white text-left font-main text-lg rounded-[26px] ">
               Be one of out partners
             </h3>
           </div>

@@ -3,11 +3,11 @@ import HeroImg from "../../assets/imags/hero.jpg";
 
 export const BoxService = ({ img, text, title }) => {
   return (
-    <div className="max-w-sm bg-white rounded-[40px] overflow-hidden px-6 pb-4 pt-6 h-fit">
+    <div className="max-w-sm bg-white rounded-[16px] overflow-hidden px-4 pb-4 pt-4 h-fit">
       <img src={img} alt="" className="rounded-[16px] w-full h-[200px]" />
       <div className="py-4">
-        <div className="font-bold text-xl mb-2">{title}</div>
-        <p className="text-gray-700 text-base">{text}</p>
+        <div className="font-bold text-xl mb-2 px-1">{title}</div>
+        <p className="text-gray-700 text-sm lg:text-base px-1">{text}</p>
       </div>
     </div>
   );
@@ -15,15 +15,15 @@ export const BoxService = ({ img, text, title }) => {
 
 const index = () => {
   return (
-    <section className="h-[1400px] px-20 my-10">
+    <section className=" lg:h-[1400px] py-4 md:py-12 lg:py-14 xl:py-32 px-6 lg:px-0">
       <div className="h-full w-full">
         <div className="grid w-full  h-full gap-0 lg:grid-cols-2 relative  ">
           <div className="grid grid-cols-1 justify-between content-between  w-2/2 h-full ">
-            <div className="w-2/3  ">
-              <h1 className="font-main font-bold text-3xl">
+            <div className="w-2/3 lg:p-8  ">
+              <h1 className="font-main font-bold text-xl xl:text-4xl">
                 Unlocking <br /> Possibilities
               </h1>
-              <p className=" font-mainLight w-2/4 text-base leading-[1.1] mt-5">
+              <p className=" font-mainLight w-2/4 text-base leading-[1.1] mt-5 mb-10">
                 Our Services Showcase
               </p>
             </div>

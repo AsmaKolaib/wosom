@@ -11,7 +11,7 @@ const index = () => {
     " contact": " contact",
   };
   return (
-  
+
     <footer className="relative bg-black text-[#D2D2D2]  pt-8 pb-6 mt-5 h-fit">
       <div className="container mx-auto ">
         <div className="px-8">
@@ -62,7 +62,7 @@ const index = () => {
           </div>
         </div>
         <hr className="my-6 border-[#343333]" />
-        <div className="flex justify-between px-8 ">
+        <div className="flex justify-between px-4 ">
           <div className="w-full md:w-4/12 px-4 ">
           <div className="flex justify-between text-[#7C7C7C]  ">
             <NavLink to="#" className="pr-4 ">

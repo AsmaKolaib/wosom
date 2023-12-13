@@ -13,14 +13,13 @@ const DesktopLayout = () => {
   return (
     <>
       <Header />
-      <div className="container mx-auto">
+      <div className="container mx-auto flex flex-col ">
         <Partners />
         <Features />
         <Services />
-        <Prices />
+        {/* <Prices /> */}
         <Articles />
         <FAQ />
-
         <Contact />
       </div>
       <Footer />

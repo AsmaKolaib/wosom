@@ -3,7 +3,7 @@ import FAQSection from "./faqSection";
 import { questions } from "./questions";
 const index = () => {
   return (
-    <section className=" px-4 my-8 h-screen w-full">
+    <section className=" px-4  h-screen w-full">
       <div className="flex flex-col justify-evenly h-full">
         <div className="w-full  pr-3 mb-4 ">
           <h1 className="font-main font-bold text-xl sm:text-2xl">
@@ -15,7 +15,7 @@ const index = () => {
             we'll respond promptly to address your needs
           </p>
         </div>
-        <div className=" w-full  mt-8 text-sm">
+        <div className=" w-full  text-sm">
           {questions.map((item) => {
             return <FAQSection question={item.question} answer={item.answer} />;
           })}

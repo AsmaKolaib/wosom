@@ -3,15 +3,13 @@ import React from "react";
 const ArticleBox = () => {
   return (
     <div className="relative">
-      <div className="w-[66px] h-[76px] sm:w-[76px] sm:h-[86px] md:w-[66px] md:h-[66px] xl:w-[76px] xl:h-[76px] absolute top-[-25px] right-[-22px]">
+      <div className="w-[66px] h-[76px] sm:w-[76px] sm:h-[86px] md:w-[56px] md:h-[56px] xl:w-[76px] xl:h-[76px] absolute md:top-[-22px]  lg:top-[-25px] right-[-22px]">
         <a href="#">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="100%"
-            height="100%"
             viewBox="0 0 86 86"
             fill="none"
-            className=" "
+            className=" w-[100%]  h-[100%]"
           >
             <circle cx="43" cy="43" r="43" fill="#D9D9D9" />
             <path

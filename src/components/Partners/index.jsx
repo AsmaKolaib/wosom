@@ -1,9 +1,9 @@
 import React from "react";
-import ELM from "../../assets/imags/ELM.png";
-import kindAbdelaziz from "../../assets/imags/kind Abdelaziz.png";
-import sdara from "../../assets/imags/sdara.png";
-import KingSaud from "../../assets/imags/King saud.png";
-import MohamedBinZayed from "../../assets/imags/Mohamed bin zayed.png";
+import ELM from "../../assets/imags/ELM1.png";
+import kindAbdelaziz from "../../assets/imags/kind Abdelaziz1.png";
+import sdara from "../../assets/imags/sdara1.png";
+import KingSaud from "../../assets/imags/King saud1.png";
+import MohamedBinZayed from "../../assets/imags/Mohamed bin zayed1.png";
 import { PressStart } from "./fallbox";
 
 const index = () => {
@@ -16,44 +16,45 @@ const index = () => {
   };
 
   return (
-    <section>
-      <div className="flex justify-around m-auto w-[95%] my-5 h-screen">
-        <div className="bg-white flex flex-col justify-between w-[90%] mx-2 rounded-[40px] p-10  pr-20">
-          <div className="mt-4 h-full w-2/4">
-            <h1 className=" font-main  font-semibold text-3xl">
-              Our Commitment to Delivering a Trusted AI Experience{" "}
+    <section className=" h-screen">
+      <div className=" h-screen flex justify-around m-auto w-full  pt-20 ">
+        <div className="bg-white flex flex-col justify-between w-full xl:w-[90%]  h-full rounded-[40px] p-6 xl:p-10  xl:pr-20">
+          <div className=" h-full w-full ">
+            <h1 className="  font-main  font-semibold text-lg xl:text-3xl">
+              Our Commitment to <br /> Delivering a Trusted AI <br />
+              Experience
             </h1>
             <p className=" font-mainLight text-base pt-4">
               Partners how trust us
             </p>
           </div>
 
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-3 gap-4 lg:gap-4 ">
             {Object.entries(partners).map(([key, value]) => (
-              <div className=" relative flex flex-col justify-center items-center rounded-[26px] p-12 bg-[#F1F0EC]">
-                <h3 className=" absolute bg-white font-main text-sm rounded-[36px] px-4 py-1 top-2 right-6 ">
+              <div className=" relative flex flex-col justify-center items-center rounded-[26px] py-4 px-8 lg:p-4 xl:p-8 bg-[#F1F0EC]">
+                <h3 className=" absolute bg-white font-main text-xs lg:text-sm rounded-[36px] px-4 py-1 top-2 right-6 ">
                   {key}
                 </h3>
+
                 <img
                   src={value}
                   alt={key}
-                  className={`${
-                    key === "King Saud"
-                      ? "w-[176px] h-[66px]"
-                      : "w-[80px] h-[70px]"
-                  }`}
+            
+                  className="
+                  w-[103px] h-[83px]
+                  "
                 />
               </div>
             ))}
-            <div className=" relative flex flex-col justify-between items-start rounded-[26px] py-4 pl-6 pr-0 bg-black">
+            <div className=" relative flex flex-col justify-evenly lg:justify-between items-start rounded-[26px] pr-0 py-2 px-4 lg:p-4 lg:pr-0  bg-black">
               <span className="bg-white w-full rounded-l-full">
                 <svg
-                  width="46"
-                  height="46"
+                  // width="46"
+                  // height="46"
                   viewBox="0 0 46 46"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="ml-2 my-1"
+                  className="ml-2 my-1 w-[22px] h-[22px]  lg:w-[46px]  lg:h-[46px] "
                 >
                   <rect width="46" height="46" rx="23" fill="#F1F0EC" />
                   <path
@@ -62,7 +63,7 @@ const index = () => {
                   />
                 </svg>
               </span>
-              <h3 className="  text-white font-main text-xl rounded-[36px]  ">
+              <h3 className="  text-white font-main text-sm lg:text-base xl:text-xl ">
                 Be one of out <br /> partners
               </h3>
             </div>
@@ -70,7 +71,7 @@ const index = () => {
         </div>
 
         <div className="bg-[#5933EF] w-2/6 mx-2 rounded-[40px]">
-          <PressStart />
+          {/* <PressStart /> */}
         </div>
       </div>
     </section>

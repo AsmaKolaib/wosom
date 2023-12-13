@@ -17,10 +17,10 @@ const Header = () => {
   };
 
   return (
-    <section className="relative h-screen">
+    <section className="relative h-screen container mx-auto">
       <section className="  relative flex w-full justify-between  text-black  hover:text-neutral-700  ">
-        <nav className="flex z-50 w-full justify-between py-2 px-3 font-main font-bold text-lg lg:py-2">
-          <div className="ml-10 flex w-2/4  justify-start items-center">
+        <nav className="flex z-50 w-full justify-between py-2 md-px-0 lg:px-3 font-main font-bold text-lg lg:py-2">
+          <div className=" md:ml-4 lg:ml-10 flex w-2/4  justify-start items-center">
             <a className=" bg-white rounded-[8px]  px-6 py-3" href="#">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +36,7 @@ const Header = () => {
               </svg>
             </a>
           </div>
-          <div className=" z-10 mr-10 flex w-2/4 items-center justify-end py-4 pl-4 pr-3">
+          <div className=" z-10 md:mr-4 lg:mr-10 flex w-2/4 items-center justify-end py-4 pl-4 pr-3">
             <span className="bg-white rounded-[8px]  px-8 py-3 mr-4 ">
               <a href="#" className="font-main font-bold hover:opacity-90">
                 Sing up

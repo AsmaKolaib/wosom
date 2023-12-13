@@ -3,18 +3,18 @@ import FAQSection from "./faqSection";
 import { questions } from "./questions";
 const index = () => {
   return (
-    <div className="flex justify-between p-20 ">
-      <div className="w-2/3  ">
+    <div className="flex justify-between  items-start lg:pt-20  md:pt-14 h-screen">
+      <div className="w-2/5 lg:w-2/3 lg:p-8  ">
         <h1 className="font-main font-bold text-3xl">
           Frequently Asked <br /> Questions
         </h1>
-        <p className=" font-mainLight w-2/4 text-base leading-[1.1] mt-5">
+        <p className=" font-mainLight  lg:w-2/4 text-base leading-[1.1] mt-5">
           Whether you're seeking product information, technical support, or
           general guidance, we're here to support you. Drop us a message, and
           we'll respond promptly to address your needs
         </p>
       </div>
-      <div className=" w-2/3 mx-auto px-5 ">
+      <div className="w-2/2 lg:w-2/3 mx-auto px-5 ">
         {questions.map((item) => {
           return <FAQSection question={item.question} answer={item.answer} />;
         })}

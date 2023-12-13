@@ -3,7 +3,8 @@ import DesktopLayout from "./DesktopLayout";
 import MobileLayout from "./MobileLayout";
 const Home = () => {
   const [width, setWidth] = useState(window.innerWidth);
-  const breakpoint = 620;
+  const breakpoint = 768;
+  // 620
   useEffect(() => {
     const handleWindowResize = () => setWidth(window.innerWidth);
     window.addEventListener("resize", handleWindowResize);

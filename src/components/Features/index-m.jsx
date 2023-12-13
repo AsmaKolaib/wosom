@@ -4,7 +4,7 @@ import TempImg from "../../assets/imags/img.jpg";
 export const BoxFeature = ({ img, title }) => {
   return (
     <div className=" relative max-w-sm bg-white rounded-[40px] h-fit">
-      <img src={img} alt="" className="rounded-[16px] w-full h-[200px]" />
+      <img src={img} alt="" className="rounded-[14px] w-full h-[200px]" />
       <div className="  w-full text-white text-center px-20 ">
         <div className="absolute bottom-0 w-[80%] left-[17px] font-bold text-xs mb-2 rounded-[17px]  py-2   bg-black">
           {title}
@@ -16,7 +16,7 @@ export const BoxFeature = ({ img, title }) => {
 
 const index = () => {
   return (
-    <section className=" px-4 my-8 h-full w-full">
+    <section className=" px-2 my-8 h-full w-full">
 
         <div className=" bg-white rounded-[14px] grid gap-6 grid-col-1 w-full  h-full  relative  px-4   ">
           <div className="flex  justify-between w-2/2 h-full p-8 px-0">

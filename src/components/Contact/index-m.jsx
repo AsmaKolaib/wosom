@@ -2,8 +2,8 @@ import React from "react";
 import ContactForm from "./contactForm";
 const index = () => {
   return (
-    <section className="flex flex-col justify-between  px-4 my-8  w-full">
-      <div className="w-2/2 p-8 px-0">
+    <section className="flex flex-col justify-between  px-4   w-full">
+      <div className="w-2/2 p-4  ">
         <h1 className="font-main font-bold text-xl sm:text-2xl">
           We're Here to <br /> Help
         </h1>
@@ -14,7 +14,7 @@ const index = () => {
         </p>
         </div>
         <div><ContactForm /></div>
-        <div>
+        <div className="mb-4">
           <ul className="p-4">
             <li className="flex items-center   py-2">
               <span className="mr-5">

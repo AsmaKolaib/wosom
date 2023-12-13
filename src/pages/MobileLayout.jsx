@@ -14,14 +14,14 @@ const MoblieLayout = () => {
     <>
       <Header />
       <div className="container mx-auto">
-      <Partners />
-      <Features />
-      <Services />
-      <Prices />
-      <Articles />
-      <FAQ />  
-       <Contact />
-       </div>
+        <Partners />
+        <Features />
+        <Services />
+        <Prices />
+        <Articles />
+        <FAQ />
+        <Contact />
+      </div>
       <Footer />
     </>
   );

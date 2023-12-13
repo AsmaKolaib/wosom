@@ -29,8 +29,8 @@ const index = () => {
       "Automate object detection and segmentation with AI-powered tools, and annotate videos of any length with an intuitive user interface.",
   };
   return (
-    <section className=" px-4 my-8 h-full w-full">
-      <div className="grid w-full  h-full gap-0  relative  ">
+    <section className=" px-2 my-8 h-full w-full">
+      <div className="grid w-full  h-full gap-0  relative p-4 ">
         <div className="w-full mb-10  ">
           <h1 className="font-main font-bold text-xl sm:text-2xl">
             Unlocking <br /> Possibilities
