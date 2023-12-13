@@ -13,6 +13,7 @@ const MoblieLayout = () => {
   return (
     <>
       <Header />
+      <div className="container mx-auto">
       <Partners />
       <Features />
       <Services />
@@ -20,6 +21,7 @@ const MoblieLayout = () => {
       <Articles />
       <FAQ />  
        <Contact />
+       </div>
       <Footer />
     </>
   );

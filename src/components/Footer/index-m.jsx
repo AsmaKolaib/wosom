@@ -62,7 +62,7 @@ const index = () => {
           </div>
         </div>
         <hr className="my-6 border-[#343333]" />
-        <div className="flex justify-between  ">
+        <div className="flex justify-between px-8 ">
           <div className="w-full md:w-4/12 px-4 ">
           <div className="flex justify-between text-[#7C7C7C]  ">
             <NavLink to="#" className="pr-4 ">
