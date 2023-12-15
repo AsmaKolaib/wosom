@@ -8,7 +8,6 @@ import Articles from "../components/Articles";
 import FAQ from "../components/FAQ";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import Hero from "../components/Hero";
 const DesktopLayout = () => {
   return (
     <>
