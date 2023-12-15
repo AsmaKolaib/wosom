@@ -22,7 +22,7 @@ const DesktopLayout = () => {
         <div className="py-20">
           <Services />
         </div>
-        <div className="py-20">
+        <div className="pb-20">
           <Prices />
         </div>
         <div className="py-20">

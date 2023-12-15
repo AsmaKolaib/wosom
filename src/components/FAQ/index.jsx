@@ -3,7 +3,7 @@ import FAQSection from "./faqSection";
 import { questions } from "./questions";
 const index = () => {
   return (
-    <div className="flex justify-between  items-start lg:pt-20  md:pt-14 ">
+    <div className="flex justify-between  items-start  ">
       <div className="w-2/5 lg:w-2/3 lg:p-8  ">
         <h1 className="font-main font-bold text-3xl">
           Frequently Asked <br /> Questions
