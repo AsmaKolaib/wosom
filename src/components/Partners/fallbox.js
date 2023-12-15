@@ -1,187 +1,240 @@
-import { Bodies, Composite, Engine, Events, Mouse, MouseConstraint, Runner } from "matter-js";
-import { useEffect, useRef, useState } from "react";
-import styled from "styled-components";
+import React, { useEffect, useRef } from 'react';
+import Matter from 'matter-js';
+import Two from 'two.js';
 
-const engine = Engine.create({
-  constraintIterations: 2, // Increase precision
-  positionIterations: 6, // Increase precision
-});
+const CanvasAnimation = () => {
+  const containerRef = useRef(null);
+  const entities = [];
+  const copy = [" AI-based engine ", "Privacy focused", "Abundant in features", "Easy to use", "good Ui", "Secure", "Multimedia", "Fast"];
 
-const runner = Runner.create();
-
-Runner.run(runner, engine);
-
-const StyledRectangle = styled.div`
-  background-color: white;
-  border-radius: 25px; /* Set the border-radius to 25px for rounded edges */
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform-origin: 0% 100%; /* Set the transform origin for diagonal rotation */
-  transition: transform 0.3s ease-in-out; /* Add transition for smooth movement */
-`;
-
-const Canvas = styled.div`
-  width: 100%;
-  height: 100%; /* Set height to 100% to inherit from its parent */
-  position: relative;
-  background: #5933EF;
-  overflow: hidden; /* Ensure that the rectangles are contained within the canvas */
-  padding: 10px;
-`;
-
-export function PressStart() {
-  const ref = useRef(null);
-
-  const dots = useRef([]);
-  const [, setAnim] = useState(0);
-
-  useEffect(function init() {
-    const width = 300;
-    const height = 643;
-
-    const ground = Bodies.rectangle(width / 2, height, width, 50, {
-      isStatic: true,
-    });
-    const ceiling = Bodies.rectangle(width / 2, 0, width, 1, {
-      isStatic: true,
-    });
-    const wallL = Bodies.rectangle(0, height / 2, 1, height, {
-      isStatic: true,
-    });
-    const wallR = Bodies.rectangle(width, height / 2, 50, height, {
-      isStatic: true,
-    });
-
-    Composite.add(engine.world, [ground, ceiling, wallL, wallR]);
-  }, []);
+  const vector = new Two.Vector();
 
   useEffect(() => {
-    let unsubscribe;
-    function addDot() {
-      const width = 300;
-      const height = 300;
-      const padding = 10; // Adjust the padding value
-    
-      const word = generateRandomWord();
-      const rectWidth = 100; // Set a fixed width for all rectangles
-      const rectHeight = 50;
-    
-      const rect = Bodies.rectangle(
-        Math.random() * (width - rectWidth - 2 * padding) + rectWidth / 2 + padding,
-        height - rectHeight / 2 - padding, // Adjust the y-coordinate to start from the bottom
-        rectWidth,
-        rectHeight,
-        {
-          isStatic: false,
-          friction: 0.2, // Adjust friction for less movement after falling
-          frictionAir: 0.01, // Adjust frictionAir for less movement after falling
-          restitution: 0, // Set restitution to 0 for no bouncing after falling
-          angle: Math.random() * (Math.PI / 4), // Set initial angle for diagonal motion
-        }
-      );
-    
-      Composite.add(engine.world, rect);
-    
-      dots.current.push({ word, rectangle: rect });
-    
-      if (dots.current.length < 10) setTimeout(addDot, 300);
-    }
-    
-    
-    
+    const two = new Two({
+      type: Two.Types.canvas,
+      fullscreen: true,
+      autostart: true,
+    }).appendTo(containerRef.current);
 
-    addDot();
+    const solver = Matter.Engine.create();
+    solver.world.gravity.y = 1;
 
-    return () => {
-      clearTimeout(unsubscribe);
-    };
-  }, []);
-
-  useEffect(function triggerAnimation() {
-    let unsubscribe;
-
-    function animate() {
-      for (let i = 0; i < dots.current.length; i++) {
-        const dot = dots.current[i];
-        const { rectangle } = dot;
-
-        if (!rectangle.isStatic) {
-          dots.current[i] = { ...dot, x: rectangle.position.x, y: rectangle.position.y, angle: rectangle.angle };
-        }
-      }
-
-      setAnim((x) => x + 1);
-
-      unsubscribe = requestAnimationFrame(animate);
-    }
-
-    unsubscribe = requestAnimationFrame(animate);
-
-    return () => {
-      cancelAnimationFrame(unsubscribe);
-    };
-  }, []);
-
-  useEffect(() => {
-    const mouse = Mouse.create(ref.current);
-    const mouseConstraint = MouseConstraint.create(engine, {
-      mouse: mouse,
-      constraint: {
-        stiffness: 0.2, // Set the stiffness for smooth movement
-        render: {
-          visible: false, // Hide constraint rendering
-        },
+    const bounds = {
+      length: 5000,
+      thickness: 50,
+      properties: {
+        isStatic: true,
       },
-    });
-
-    Composite.add(engine.world, mouseConstraint);
-
-    // Event listener for mouse drag start
-    Events.on(mouseConstraint, "startdrag", (event) => {
-      const { body } = event;
-      if (body && body.render) {
-        body.render.fillStyle = "red"; // Change color when dragged
-      }
-    });
-
-    // Event listener for mouse drag end
-    Events.on(mouseConstraint, "enddrag", (event) => {
-      const { body } = event;
-      if (body && body.render) {
-        body.render.fillStyle = "white"; // Change color back to white when released
-      }
-    });
-
-    return () => {
-      Mouse.clearSourceEvents(mouse);
-      Composite.remove(engine.world, mouseConstraint);
     };
+
+    bounds.left = createBoundary(bounds.thickness, bounds.length);
+    bounds.right = createBoundary(bounds.thickness, bounds.length);
+    bounds.bottom = createBoundary(bounds.length, bounds.thickness);
+
+    Matter.World.add(solver.world, [
+      bounds.left.entity,
+      bounds.right.entity,
+      bounds.bottom.entity,
+    ]);
+
+    const defaultStyles = {
+      size: two.width * 0.08,
+      weight: 400,
+      fill: "black", // Set the fill color to black
+      leading: two.width * 0.08 * 0.8,
+      family: "Angus, Arial, sans-serif",
+      alignment: "center",
+      baseline: "baseline",
+      margin: {
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+      },
+    };
+
+    addSlogan();
+    resize();
+    const mouse = addMouseInteraction();
+    two.bind("resize", resize).bind("update", update);
+
+    function addMouseInteraction() {
+      const mouse = Matter.Mouse.create(document.body);
+      const mouseConstraint = Matter.MouseConstraint.create(solver, {
+        mouse: mouse,
+        constraint: {
+          stiffness: 0.2,
+        },
+      });
+
+      Matter.World.add(solver.world, mouseConstraint);
+
+      return mouseConstraint;
+    }
+
+    function resize() {
+      const length = bounds.length;
+      const thickness = bounds.thickness;
+
+      vector.x = -thickness / 2;
+      vector.y = two.height / 2;
+      Matter.Body.setPosition(bounds.left.entity, vector);
+
+      vector.x = two.width + thickness / 2;
+      vector.y = two.height / 2;
+      Matter.Body.setPosition(bounds.right.entity, vector);
+
+      vector.x = two.width / 2;
+      vector.y = two.height + thickness / 2;
+      Matter.Body.setPosition(bounds.bottom.entity, vector);
+
+      let size;
+
+      if (two.width < 480) {
+        size = two.width * 0.12;
+      } else if (two.width > 1080 && two.width < 1600) {
+        size = two.width * 0.07;
+      } else if (two.width > 1600) {
+        size = two.width * 0.06;
+      } else {
+        size = two.width * 0.08;
+      }
+
+      let leading = size * 0.8;
+
+      for (let i = 0; i < two.scene.children.length; i++) {
+        let child = two.scene.children[i];
+
+        if (!child.isWord) {
+          continue;
+        }
+
+        const text = child.text;
+        const rectangle = child.rectangle;
+        const entity = child.entity;
+
+        text.size = size;
+        text.leading = leading;
+
+        const rect = text.getBoundingClientRect(true);
+        rectangle.width = rect.width;
+        rectangle.height = rect.height;
+
+        Matter.Body.scale(entity, 1 / entity.scale.x, 1 / entity.scale.y);
+        Matter.Body.scale(entity, rect.width, rect.height);
+        entity.scale.set(rect.width, rect.height);
+
+        text.size = size / 3;
+      }
+    }
+
+    function addSlogan() {
+      let x = defaultStyles.margin.left;
+      let y = -two.height;
+    
+      for (let i = 0; i < copy.length; i++) {
+        const word = copy[i];
+        const group = new Two.Group();
+        const text = new Two.Text("", 0, 0, defaultStyles);
+    
+        group.isWord = true;
+    
+        if (word.value) {
+          text.value = word.value;
+    
+          for (let prop in word.styles) {
+            text[prop] = word.styles[prop];
+          }
+        } else {
+          text.value = word;
+        }
+    
+        const rect = text.getBoundingClientRect();
+        let ox = x + rect.width / 2;
+        let oy = y + rect.height / 2;
+    
+        let ca = x + rect.width;
+        let cb = two.width;
+    
+        if (ca >= cb) {
+          x = defaultStyles.margin.left;
+          y +=
+            defaultStyles.leading +
+            defaultStyles.margin.top +
+            defaultStyles.margin.bottom;
+    
+          ox = x + rect.width / 2;
+          oy = y + rect.height / 2;
+        }
+    
+        group.translation.x = ox;
+        group.translation.y = oy;
+        text.translation.y = 14;
+    
+        // Create a rounded rectangle with white fill
+        const rectangle = new Two.RoundedRectangle(
+          0,
+          0,
+          rect.width + 25, // Width with additional space for rounded corners
+          rect.height + 25, // Height with additional space for rounded corners
+          10 // Radius of rounded corners
+        );
+        rectangle.fill = 'white';
+        rectangle.stroke = 'none'; // No stroke (border)
+        rectangle.visible = true;
+    
+        const entity = Matter.Bodies.rectangle(ox, oy, 1, 1);
+        Matter.Body.scale(entity, rect.width, rect.height);
+    
+        entity.scale = new Two.Vector(rect.width, rect.height);
+        entity.object = group;
+        entities.push(entity);
+    
+        x += rect.width + defaultStyles.margin.left + defaultStyles.margin.right;
+    
+        group.text = text;
+        group.rectangle = rectangle;
+        group.entity = entity;
+    
+        group.add(rectangle, text);
+        two.add(group);
+      }
+    
+      Matter.World.add(solver.world, entities);
+    }
+
+    function update(frameCount, timeDelta) {
+      let allBodies = Matter.Composite.allBodies(solver.world);
+      Matter.MouseConstraint.update(mouse, allBodies);
+      Matter.MouseConstraint._triggerEvents(mouse);
+
+      Matter.Engine.update(solver);
+
+      for (let i = 0; i < entities.length; i++) {
+        let entity = entities[i];
+        entity.object.position.copy(entity.position);
+        entity.object.rotation = entity.angle;
+      }
+    }
+
+    function createBoundary(width, height) {
+      const rectangle = two.makeRectangle(0, 0, width, height);
+      rectangle.visible = false;
+
+      rectangle.entity = Matter.Bodies.rectangle(
+        0,
+        0,
+        width,
+        height,
+        bounds.properties
+      );
+      rectangle.entity.position = rectangle.position;
+
+      return rectangle;
+    }
   }, []);
 
-  return (
-    <Canvas ref={ref}>
-      {dots.current.map((dot, key) => (
-        <StyledRectangle
-          key={key}
-          style={{
-            top: dot.y,
-            left: dot.x,
-            width: "100px", // Set a fixed width for all rectangles
-            height: "50px",
-            transform: `rotate(${dot.angle}rad)`, // Rotate the rectangle diagonally
-          }}
-        >
-          {dot.word}
-        </StyledRectangle>
-      ))}
-    </Canvas>
-  );
-}
+  return <div ref={containerRef} className='bg-black'/>;
+};
 
-export function generateRandomWord() {
-  const words = [" AI-based engine ", "Privacy focused", "Abundant in features", "Easy to use", "good Ui", "Secure", "Multimedia", "Fast"];
-  const randomIndex = Math.floor(Math.random() * words.length);
-  return words[randomIndex];
-}
+export default CanvasAnimation;

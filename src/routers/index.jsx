@@ -11,6 +11,7 @@ import Header from "../components/Header";
 import Services from "../components/Services";
 import Partners from "../components/Partners/index";
 import Features from "../components/Features";
+import FallBox from "../components/Partners/fallbox";
 
 
 import HeaderM from "../components/Header/index-m";
@@ -45,6 +46,7 @@ export const AppRouter = () => {
       <Route path="/prices-m" element={<PricesM/>} />
       <Route path="/contact-m" element={<ContactM/>} />
       <Route path="/faq-m" element={<FAQM />} />
+      <Route path="/fallBox" element={<FallBox />} />
       <Route path="/articles-m" element={<ArticlesM />} />
       {/* <Route path="/login" element={} /> */}
       <Route path="*" element={<NotFound />} />

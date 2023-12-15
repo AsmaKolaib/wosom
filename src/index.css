@@ -2,29 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
-  }
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
 
 @font-face {
-    font-family: Helvetica;
-    src: url("assets/fonts/Helvetica.ttf") format("TrueType");
-  }
+  font-family: Helvetica;
+  src: url("assets/fonts/Helvetica.ttf") format("TrueType");
+}
 
-  @font-face {
-    font-family: "Helvetica-light";
-    src: url("assets/fonts/helvetica-light.ttf") format("TrueType");
-  }
-  
-  @font-face {
-    font-family: "Mea";
-    src: url("assets/fonts/MeaCulpa-Regular.ttf") format("TrueType");
-  }
+@font-face {
+  font-family: "Helvetica-light";
+  src: url("assets/fonts/helvetica-light.ttf") format("TrueType");
+}
 
-  body{
-    @apply bg-[#F1F0EC]
-  }
+@font-face {
+  font-family: "Mea";
+  src: url("assets/fonts/MeaCulpa-Regular.ttf") format("TrueType");
+}
 
-
+body {
+  @apply bg-[#F1F0EC];
+}
