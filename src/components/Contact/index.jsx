@@ -3,7 +3,7 @@ import ContactForm from "./contactForm";
 const index = () => {
   return (
     <div className="w-full flex items-center justify-center">
-      <div className=" p-8 grid gap-4 lg:gap-8 xl:gap-16 items-center justify-center grid-cols-3 w-full  lg:grid-cols-3 ">
+      <div className=" p-0 lg:p-8 grid gap-4 lg:gap-8 xl:gap-16 items-center justify-center grid-cols-3 w-full  lg:grid-cols-3 ">
         <div className=" flex flex-col justify-between items-center divide-y  divide-gray-200 h-full w-full">
           <div className=" w-full lg:mt-10 ">
             <h1 className="font-main font-bold text-3xl">
@@ -16,7 +16,7 @@ const index = () => {
             </p>
           </div>
 
-          <div className=" bg-white  rounded-[16px] w-full p-2 lg:p-8 text-xs font-bold">
+          <div className=" bg-white rounded-[8px]  lg:rounded-[16px] w-full p-2 lg:p-8 text-xs font-bold">
             <ul>
               <li className="flex items-center bg-[#F1F0EC] px-4 py-2 rounded-[8px] mb-4">
                 <span className=" mr-2 lg:mr-5">
@@ -84,7 +84,7 @@ const index = () => {
             </ul>
           </div>
         </div>
-        <div className="w-full col-span-2 lg:bg-[#5933EF] lg:py-16  px-8 lg:px-16  xl:px-32  rounded-[26px] ">
+        <div className="w-full col-span-2 lg:bg-[#5933EF] lg:py-16  px-0 md:pl-8 lg:px-16  xl:px-32  rounded-[26px] ">
           <ContactForm />
         </div>
       </div>

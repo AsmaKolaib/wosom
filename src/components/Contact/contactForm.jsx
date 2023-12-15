@@ -49,7 +49,7 @@ const ContactForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="bg-white flex flex-col border rounded-[18px] md:rounded-[26px]  p-4 sm:p-6 lg:p-8"
+      className="bg-white flex flex-col border rounded-[16px]  lg:rounded-[26px]  p-4 sm:p-6 lg:p-8"
     >
       <div className="grid gap-4">
         <div>

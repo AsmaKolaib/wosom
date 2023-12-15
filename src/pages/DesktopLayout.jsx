@@ -11,7 +11,7 @@ import Footer from "../components/Footer";
 const DesktopLayout = () => {
   return (
     <>
-      <div className="container mx-auto flex flex-col px-10">
+      <div className="container mx-auto flex flex-col px-0 lg:px-10">
         <Header />
         <div className="py-20">
           <Partners />
@@ -22,16 +22,16 @@ const DesktopLayout = () => {
         <div className="py-20">
           <Services />
         </div>
-        <div className="pb-20">
+        {/* <div className="pb-20">
           <Prices />
-        </div>
+        </div> */}
         <div className="py-20">
           <Articles />
         </div>
         <div className="py-20">
           <FAQ />
         </div>
-        <div className="pb-20">
+        <div className="py-20 ">
           <Contact />
         </div>
       </div>

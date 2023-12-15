@@ -3,7 +3,7 @@ import TempImg from "../../assets/imags/img.jpg";
 
 export const BoxFeature = ({ img, title }) => {
   return (
-    <div className=" relative max-w-sm bg-white rounded-[16px] h-fit ">
+    <div className=" relative max-w-sm bg-white  lg:rounded-[16px] h-fit ">
       <img src={img} alt="" className="rounded-[16px] w-full object-cover " />
       <div className="  w-full text-white text-center px-20 ">
         <div className=" text-xs absolute bottom-0 w-[90%] left-[10px] lg:left-[20px]  lg:text-base mb-2 rounded-[17px] px-6 py-2   bg-black">
@@ -19,7 +19,7 @@ const index = () => {
     <section>
       <div className="h-full w-full">
         <div className="flex flex-row items-center  w-full  h-full  relative  ">
-          <div className="mr-4 flex flex-col justify-between  w-2/4 h-full bg-white rounded-[40px] p-6 pt-8 lg:p-14">
+          <div className="mr-4 flex flex-col justify-between  w-2/4 h-full bg-white rounded-[16px] lg:rounded-[40px] p-6 pt-8 lg:p-14">
             <div className=" w-full lg:w-2/3  ">
               <h1 className="font-main font-bold text-xl xl:text-4xl">
                 Label Faster with <br /> Wasom AI

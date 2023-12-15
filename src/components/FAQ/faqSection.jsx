@@ -2,7 +2,7 @@ import React from "react";
 
 const FAQSection= ({ question, answer })=> {
   return (
-    <div className="mx-auto grid max-w-xl divide-y divide-neutral-200 font-mainLight after:content after:pb-2 after:border-b-2 after:border-b-[#e5e7eb] ">
+    <div className="mx-auto grid lg:max-w-xl divide-y divide-neutral-200 font-mainLight after:content after:pb-2 after:border-b-2 after:border-b-[#e5e7eb] ">
       <div className="">
         <details className="group">
           <summary className="flex cursor-pointer list-none items-center justify-between font-sm p-2 ">

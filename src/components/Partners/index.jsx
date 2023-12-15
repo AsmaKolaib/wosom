@@ -18,7 +18,7 @@ const index = () => {
   return (
     <section className=" w-full">
       <div className=" h-full flex justify-around m-auto w-full  pt-20 ">
-        <div className="bg-white flex flex-col justify-between w-full   h-full rounded-[40px] p-6 pr-20 mr-5">
+        <div className="bg-white flex flex-col justify-between w-full   h-full rounded-[40px] p-6 lg:pr-20 lg:mr-5">
           <div className=" h-full w-full ">
             <h1 className="  font-main  font-semibold text-lg xl:text-3xl">
               Our Commitment to <br /> Delivering a Trusted AI <br />
@@ -29,7 +29,7 @@ const index = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-3 gap-4 lg:gap-4 ">
+          <div className="grid grid-cols-3 gap-4 lg:gap-4 mt-5">
             {Object.entries(partners).map(([key, value]) => (
               <div className=" relative flex flex-col justify-center items-center rounded-[26px] py-4 px-8 lg:p-4 xl:p-8 bg-[#F1F0EC]">
                 <h3 className=" absolute bg-white font-main text-xs lg:text-sm rounded-[36px] px-4 py-1 top-2 right-6 ">
@@ -69,7 +69,7 @@ const index = () => {
           </div>
         </div>
 
-        <div className="bg-[#5933EF] w-2/6 mx-2 rounded-[40px]">
+        <div className="md:hidden lg:flex bg-[#5933EF] w-2/6 mx-2 rounded-[40px]">
           {/* <PressStart />*/}
         </div>
       </div>

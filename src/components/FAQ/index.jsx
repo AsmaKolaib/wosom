@@ -3,8 +3,8 @@ import FAQSection from "./faqSection";
 import { questions } from "./questions";
 const index = () => {
   return (
-    <div className="flex justify-between  items-start  ">
-      <div className="w-2/5 lg:w-2/3 lg:p-8  ">
+    <div className="flex justify-between flex-col lg:flex-row  items-start  ">
+      <div className=" w-full lg:w-2/3 lg:p-8  ">
         <h1 className="font-main font-bold text-3xl">
           Frequently Asked <br /> Questions
         </h1>
@@ -14,7 +14,7 @@ const index = () => {
           we'll respond promptly to address your needs
         </p>
       </div>
-      <div className="w-2/2 lg:w-2/3 mx-auto px-5 ">
+      <div className="w-full lg:w-2/3 md:pl-3 lg:pl-0 lg:mx-auto px-5 md:pt-4 lg:pt-0 lg:px-5 ">
         {questions.map((item) => {
           return <FAQSection question={item.question} answer={item.answer} />;
         })}
