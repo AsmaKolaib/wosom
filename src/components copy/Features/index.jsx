@@ -16,10 +16,10 @@ export const BoxFeature = ({ img, title }) => {
 
 const index = () => {
   return (
-    <section>
+    <section className=" py-4 md:py-12 lg:py-14 xl:py-30   h-screen">
       <div className="h-full w-full">
-        <div className="flex flex-row items-center  w-full  h-full  relative  ">
-          <div className="mr-4 flex flex-col justify-between  w-2/4 h-full bg-white rounded-[40px] p-6 pt-8 lg:p-14">
+        <div className="flex flex-row  w-full  h-full  relative  ">
+          <div className=" mr-4 flex flex-col justify-between w-2/4 h-full bg-white rounded-[40px] p-6 pt-8 lg:p-14">
             <div className=" w-full lg:w-2/3  ">
               <h1 className="font-main font-bold text-xl xl:text-4xl">
                 Label Faster with <br /> Wasom AI
@@ -29,14 +29,15 @@ const index = () => {
                 our advanced AutoAnnotate feature
               </p>
             </div>
-            <div className=" mt-[calc(60%_-_5px)] ml-2 w-[150px] relative  flex justify-center items-center bg-[#F1F0EC] rounded-full text-base py-2">
-              <a href="#" className="absolute top-[-20px]  left-[-25px]">
+            <div className=" ml-2 w-[150px] relative  flex justify-center items-center bg-[#F1F0EC] rounded-full text-base py-2">
+              <a href="#"      className="absolute top-[-20px]  left-[-25px]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="70"
                   height="80"
                   viewBox="0 0 122 122"
                   fill="none"
+              
                 >
                   <circle
                     cx="60.7792"

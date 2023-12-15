@@ -2,7 +2,7 @@ import React from "react";
 import ContactForm from "./contactForm";
 const index = () => {
   return (
-    <div className="w-full flex items-center justify-center">
+    <div className="w-full flex items-center justify-center  h-screen ">
       <div className=" p-8 grid gap-4 lg:gap-8 xl:gap-16 items-center justify-center grid-cols-3 w-full  lg:grid-cols-3 ">
         <div className=" flex flex-col justify-between items-center divide-y  divide-gray-200 h-full w-full">
           <div className=" w-full lg:mt-10 ">

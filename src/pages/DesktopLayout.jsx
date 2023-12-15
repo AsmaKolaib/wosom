@@ -8,25 +8,37 @@ import Articles from "../components/Articles";
 import FAQ from "../components/FAQ";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-
+import Hero from "../components/Hero";
 const DesktopLayout = () => {
   return (
     <>
-      <Header />
-      <div className="container mx-auto flex flex-col ">
-        <Partners />
-        <Features />
-        <Services />
-        {/* <Prices /> */}
-        <Articles />
-        <FAQ />
-        <Contact />
+      <div className="container mx-auto flex flex-col px-10">
+        <Header />
+        <div className="py-20">
+          <Partners />
+        </div>
+        <div className="py-20">
+          <Features />
+        </div>
+        <div className="py-20">
+          <Services />
+        </div>
+        <div className="py-20">
+          <Prices />
+        </div>
+        <div className="py-20">
+          <Articles />
+        </div>
+        <div className="py-20">
+          <FAQ />
+        </div>
+        <div className="pb-20">
+          <Contact />
+        </div>
       </div>
       <Footer />
     </>
   );
-
-  // return ;
 };
 
 export default DesktopLayout;

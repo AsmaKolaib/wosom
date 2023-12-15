@@ -18,10 +18,8 @@ const Header = () => {
 
   return (
     <>
-      <section className=" relative flex flex-col w-full justify-between  text-black  hover:text-neutral-700  ">
-       
-       
-      <nav className=" absolute top-0 left-0 flex z-50 w-full justify-between py-2 md-px-0 lg:px-3 font-main font-bold text-lg lg:py-2">
+      <section className=" container mx-auto  relative flex w-full justify-between  text-black  hover:text-neutral-700  ">
+        <nav className="flex z-50 w-full justify-between py-2 md-px-0 lg:px-3 font-main font-bold text-lg lg:py-2">
           <div className=" md:ml-4 lg:ml-10 flex w-2/4  justify-start items-center">
             <a className=" bg-white rounded-[8px]  px-6 py-3" href="#">
               <svg

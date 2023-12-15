@@ -16,9 +16,9 @@ const index = () => {
   };
 
   return (
-    <section className=" w-full">
-      <div className=" h-full flex justify-around m-auto w-full  pt-20 ">
-        <div className="bg-white flex flex-col justify-between w-full   h-full rounded-[40px] p-6 pr-20 mr-5">
+    <section className=" h-screen">
+      <div className=" h-screen flex justify-around m-auto w-full  pt-20 ">
+        <div className="bg-white flex flex-col justify-between w-full xl:w-[90%]  h-full rounded-[40px] p-6 xl:p-10  xl:pr-20">
           <div className=" h-full w-full ">
             <h1 className="  font-main  font-semibold text-lg xl:text-3xl">
               Our Commitment to <br /> Delivering a Trusted AI <br />
@@ -39,6 +39,7 @@ const index = () => {
                 <img
                   src={value}
                   alt={key}
+            
                   className="
                   w-[103px] h-[83px]
                   "
@@ -70,7 +71,7 @@ const index = () => {
         </div>
 
         <div className="bg-[#5933EF] w-2/6 mx-2 rounded-[40px]">
-          {/* <PressStart />*/}
+          {/* <PressStart /> */}
         </div>
       </div>
     </section>

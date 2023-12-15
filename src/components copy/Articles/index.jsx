@@ -5,7 +5,7 @@ import ArticleBox from "./articleBox";
 const Article = () => {
   return (
 
-     <section className=" h-full px-0 lg:px-0 py-2 ">
+     <section className=" h-screen px-0 lg:px-0 py-2 ">
       <div className="flex flex-col justify-between rounded-[40px] h-auto bg-main-color px-6 py-8">
         <div className="flex justify-between">
           <div className="mt-4 h-full  w-full lg:w-2/6 lg:pl-8">

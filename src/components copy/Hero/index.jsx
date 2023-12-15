@@ -3,15 +3,18 @@ import HeroImg from "../../assets/imags/hero.jpg";
 
 const index = () => {
   return (
-    <section className=" h-full w-full  ">
-      
+    <section className="absolute h-full  p-10  ">
       <div className="h-full">
         <div className="grid  h-full gap-0 grid-cols-[1.3fr_1fr] relative  ">
           <div className=" relative w-2/2  p-0 h-[100%] ">
             <div className="md:flex md:flex-col md:justify-center h-[100%] md:pt-2  w-2/2">
               <svg
+                // xmlns="http://www.w3.org/2000/svg"
+                // width="801"
+                // height="741"
                 viewBox="0 0 901 841"
                 xmlns="/#pattern"
+                // fill={HeroImg}
                 className=" w-[96%] p-0 "
                 preserveAspectRatio="none"
               >
