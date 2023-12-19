@@ -1,8 +1,17 @@
-table td,
+/* table td,
 table th {
   @apply p-4 border-b-2 border-gray-300 font-mainLight;
+} */
+
+table td,table th {
+  @apply p-6;
 }
 
-table td {
-  @apply p-6;
+table tr
+ {
+  @apply p-8 border-b-2 border-gray-300 font-mainLight;
+}
+table thead
+ {
+  @apply p-32
 }
