@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link'
+
 import Hero from "../Hero";
 const Header = () => {
   const [nav, setNav] = useState(false);
@@ -8,12 +10,12 @@ const Header = () => {
   };
   const navLinks = {
     home: "Home",
-    service: "Service",
+    services: "Service",
     market: "Market",
-    pricing: "Pricing",
+    prices: "Pricing",
     blog: "Blog",
     contact: "Contact",
-    douc: "Douc",
+   '#': "Douc",
   };
 
   return (
@@ -40,9 +42,9 @@ const Header = () => {
           </div>
           <div className=" z-10 md:mr-4 lg:mr-10 flex w-2/4 items-center justify-end py-4 pl-4 pr-3">
             <span className="bg-white rounded-[8px]  px-8 py-3 mr-4 ">
-              <a href="#" className="font-main font-bold hover:opacity-90">
+              <NavLink to="https://wosom.ai/login" className="font-main font-bold hover:opacity-90">
                 Sing up
-              </a>
+              </NavLink>
             </span>
             <span className="bg-white rounded-[8px]  px-4 py-2 ">
               <a
@@ -103,12 +105,12 @@ const Header = () => {
               >
                 {Object.entries(navLinks).map(([key, value]) => (
                   <div className="bg-white  rounded-[8px]  px-8 py-3 ">
-                    <NavLink
-                      to="#"
+                    <HashLink 
+                      to={`#${key}`}
                       className="font-main font-bold hover:opacity-90"
                     >
                       {value}
-                    </NavLink>
+                    </HashLink >
                   </div>
                 ))}
               </div>

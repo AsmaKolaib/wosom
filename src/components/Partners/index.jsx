@@ -18,7 +18,7 @@ const index = () => {
   return (
     <section className=" w-full">
       <div className=" h-full flex justify-around m-auto w-full  pt-20 ">
-        <div className="bg-white flex flex-col justify-between w-full   h-full rounded-[40px] p-6 lg:pr-20 lg:mr-5">
+        <div className="bg-white flex flex-col lg:gap-y-32 justify-between w-full   h-full rounded-[40px] p-6 lg:pr-20 lg:mr-5">
           <div className=" h-full w-full ">
             <h1 className="  font-main  font-semibold text-lg xl:text-3xl">
               Our Commitment to <br /> Delivering a Trusted AI <br />
@@ -53,10 +53,11 @@ const index = () => {
                   viewBox="0 0 46 46"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="ml-2 my-1 w-[22px] h-[22px]  lg:w-[46px]  lg:h-[46px] "
+                  className="ml-2 my-1 w-[22px] h-[22px]  lg:w-[46px]  lg:h-[46px] button-container"
                 >
                   <rect width="46" height="46" rx="23" fill="#F1F0EC" />
                   <path
+                className="arrow-path"
                     d="M30.3694 30.7761C30.798 31.1244 31.4278 31.0592 31.7761 30.6306C32.1244 30.202 32.0592 29.5722 31.6306 29.2239L30.3694 30.7761ZM14.8971 16.0053C14.3477 16.0621 13.9485 16.5535 14.0053 17.1029L14.9314 26.0551C14.9882 26.6045 15.4796 27.0037 16.029 26.9469C16.5783 26.8901 16.9776 26.3987 16.9208 25.8493L16.0976 17.8918L24.0551 17.0686C24.6045 17.0118 25.0037 16.5204 24.9469 15.971C24.8901 15.4217 24.3987 15.0224 23.8493 15.0792L14.8971 16.0053ZM31.6306 29.2239L15.6306 16.2239L14.3694 17.7761L30.3694 30.7761L31.6306 29.2239Z"
                     fill="black"
                   />

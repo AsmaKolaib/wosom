@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import Hero from "../Hero/index-m";
 const Header = () => {
   const [nav, setNav] = useState(false);
@@ -8,12 +9,12 @@ const Header = () => {
   };
   const navLinks = {
     home: "Home",
-    service: "Service",
+    services: "Service",
     market: "Market",
-    pricing: "Pricing",
+    prices: "Pricing",
     blog: "Blog",
     contact: "Contact",
-    douc: "Douc",
+    "#": "Douc",
   };
 
   return (
@@ -38,12 +39,12 @@ const Header = () => {
           </div>
           <div className=" z-10  flex w-2/3 items-center justify-end ">
             {/* <span className=" "> */}
-            <a
-              href="#"
+            <NavLink
+              to="https://wosom.ai/login"
               className="font-main font-bold hover:opacity-90 bg-white rounded-[8px]  px-8 py-4 mr-2 h-[100%]"
             >
               Sing up
-            </a>
+            </NavLink>
             {/* </span> */}
             <span className=" ">
               <a
@@ -58,7 +59,7 @@ const Header = () => {
                   height="34"
                   viewBox="0 0 41 41"
                   fill="none"
-                  className="ml-2"
+                  className={`ml-2 transition-transform duration-75 ${nav ?"transform rotate-45":""}`}
                 >
                   <g clip-path="url(#clip0_470_211)">
                     <path
@@ -101,14 +102,14 @@ const Header = () => {
               className="grid grid-cols-2 gap-x-2  gap-y-2  text-center text-xs	"
             >
               {Object.entries(navLinks).map(([key, value]) => (
-                <NavLink
-                  to="#"
+                <HashLink
+                  to={`#${key}`}
                   className="font-main font-bold hover:opacity-90"
                 >
                   <div className="bg-white  rounded-[8px]  py-3 w-[100%] ">
                     {value}
                   </div>
-                </NavLink>
+                </HashLink>
               ))}
             </div>
           </div>

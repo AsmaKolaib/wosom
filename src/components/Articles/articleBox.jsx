@@ -29,9 +29,9 @@ const ArticleBox = () => {
             redefining the boundaries of what's possible.
           </p>
         </foreignObject>
-        <a href="http://www.google.com" className="">
+        <a href="http://www.google.com" className="button-container arrow-container">
           <circle cx="444" cy="43" r="43" fill="black" />
-          <path
+          <path  className="arrow-path"
             d="M452.586 54.4142C453.367 55.1953 454.633 55.1953 455.414 54.4142C456.195 53.6332 456.195 52.3668 455.414 51.5858L452.586 54.4142ZM433 30C431.895 30 431 30.8954 431 32V50C431 51.1046 431.895 52 433 52C434.105 52 435 51.1046 435 50V34H451C452.105 34 453 33.1046 453 32C453 30.8954 452.105 30 451 30H433ZM455.414 51.5858L434.414 30.5858L431.586 33.4142L452.586 54.4142L455.414 51.5858Z"
             fill="white"
           />

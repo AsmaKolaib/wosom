@@ -26,3 +26,39 @@
 body {
   @apply bg-[#F1F0EC];
 }
+
+.button-container {
+  position: relative;
+
+}
+.arrow-container {
+  position: absolute;
+    overflow: hidden;
+  top: -8px;
+  left: -28px;
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: opacity 0.3s ease-in-out;
+}
+.button-container:hover .arrow-path {
+  cursor: pointer;
+  animation: moveArrow 0.7s ease-in-out forwards;
+}
+
+@keyframes moveArrow {
+  0% {
+    transform: translate(0, 0);
+  }
+  30% {
+    transform: translate(-40px, -40px);
+    opacity: 0;
+  }
+  70% {
+    transform: translate(18px, 18px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}

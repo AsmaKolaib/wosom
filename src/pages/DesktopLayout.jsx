@@ -8,30 +8,32 @@ import Articles from "../components/Articles";
 import FAQ from "../components/FAQ";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import ScrollToTop from "../components/Button/to-up";
 const DesktopLayout = () => {
   return (
     <>
-      <div className="container mx-auto flex flex-col px-0 lg:px-10">
+    <ScrollToTop/>
+      <div id="home" className="container mx-auto flex flex-col px-0 lg:px-10">
         <Header />
         <div className="py-20">
           <Partners />
         </div>
-        <div className="py-20">
+        <div id="market" className="py-20">
           <Features />
         </div>
-        <div className="py-20">
+        <div  id="services" className="py-20">
           <Services />
         </div>
-        <div className="pb-20">
+        <div id="prices" className="pb-20">
           <Prices />
         </div>
-        <div className="py-20">
+        <div id="blog" className="py-20">
           <Articles />
         </div>
         <div className="py-20">
           <FAQ />
         </div>
-        <div className="py-20 ">
+        <div  id="contact" className="py-20 ">
           <Contact />
         </div>
       </div>
