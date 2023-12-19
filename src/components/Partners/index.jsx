@@ -4,7 +4,7 @@ import kindAbdelaziz from "../../assets/imags/kind Abdelaziz1.png";
 import sdara from "../../assets/imags/sdara1.png";
 import KingSaud from "../../assets/imags/King saud1.png";
 import MohamedBinZayed from "../../assets/imags/Mohamed bin zayed1.png";
-import  FallBox  from "./fallbox.js";
+// import  FallBox  from "./fallbox.js";
 
 const index = () => {
   const partners = {

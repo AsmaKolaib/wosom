@@ -1,5 +1,6 @@
 import React from "react";
 import TempImg from "../../assets/imags/img.jpg";
+import { NavLink } from "react-router-dom";
 
 export const BoxFeature = ({ img, title }) => {
   return (
@@ -30,7 +31,7 @@ const index = () => {
               </p>
             </div>
             <div className=" mt-[calc(60%_-_5px)] ml-2 w-[150px] relative  flex justify-center items-center bg-[#F1F0EC] rounded-full text-base py-2">
-              <a href="#" className="absolute top-[-20px]  left-[-25px]">
+              <NavLink to="#" className="absolute top-[-20px]  left-[-25px]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="70"
@@ -50,10 +51,10 @@ const index = () => {
                     fill="white"
                   />
                 </svg>
-              </a>
+              </NavLink>
 
               <h3>1/4</h3>
-              <a href="#" className="absolute top-[-20px]  right-[-25px]">
+              <NavLink to="#" className="absolute top-[-20px]  right-[-25px]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="70"
@@ -73,7 +74,7 @@ const index = () => {
                     fill="white"
                   />
                 </svg>
-              </a>
+              </NavLink>
             </div>
           </div>
           <div className="  grid grid-cols-2 justify-center items-center content-center gap-2 lg:gap-6 w-2/4 h-full   ">

@@ -22,7 +22,7 @@ const Header = () => {
       <section className="  relative flex w-full justify-between text-black  hover:text-neutral-700  ">
         <nav className="flex z-50 w-full justify-between py-2 font-main font-bold text-sm ">
           <div className=" flex w2/12  justify-start items-center">
-            <a className=" bg-white rounded-[8px]  px-2 py-3" href="#">
+            <NavLink className=" bg-white rounded-[8px]  px-2 py-3" to="#">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="80"
@@ -35,7 +35,7 @@ const Header = () => {
                   fill="black"
                 />
               </svg>
-            </a>
+            </NavLink>
           </div>
           <div className=" z-10  flex w-2/3 items-center justify-end ">
             {/* <span className=" "> */}
@@ -47,8 +47,8 @@ const Header = () => {
             </NavLink>
             {/* </span> */}
             <span className=" ">
-              <a
-                href="#"
+              <button
+             
                 className=" flex justify-between items-center  bg-white rounded-[8px] px-5 py-2"
                 onClick={handleNav}
               >
@@ -89,7 +89,7 @@ const Header = () => {
                     </clipPath>
                   </defs>
                 </svg>
-              </a>
+              </button>
             </span>
           </div>
           <div

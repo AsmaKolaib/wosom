@@ -25,7 +25,7 @@ const Header = () => {
        
       <nav className=" absolute top-0 left-0 flex z-50 w-full justify-between py-2 md-px-0 lg:px-3 font-main font-bold text-lg lg:py-2">
           <div className=" md:ml-4 lg:ml-10 flex w-2/4  justify-start items-center">
-            <a className=" bg-white rounded-[8px]  px-6 py-3" href="#">
+            <NavLink className=" bg-white rounded-[8px]  px-6 py-3" to="#">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="80"
@@ -38,7 +38,7 @@ const Header = () => {
                   fill="black"
                 />
               </svg>
-            </a>
+            </NavLink>
           </div>
           <div className=" z-10 md:mr-4 lg:mr-10 flex w-2/4 items-center justify-end py-4 pl-4 pr-3">
             <span className="bg-white rounded-[8px]  px-8 py-3 mr-4 ">
@@ -47,8 +47,8 @@ const Header = () => {
               </NavLink>
             </span>
             <span className="bg-white rounded-[8px]  px-4 py-2 ">
-              <a
-                href="#"
+              <button
+
                 className=" flex justify-between items-center px-1 "
                 onClick={handleNav}
               >
@@ -59,7 +59,7 @@ const Header = () => {
                   height="36"
                   viewBox="0 0 41 41"
                   fill="none"
-                  className="ml-2"
+                  className={`ml-2 transition-transform duration-75 ${nav ?"transform rotate-45":""}`}
                 >
                   <g clip-path="url(#clip0_470_211)">
                     <path
@@ -89,7 +89,7 @@ const Header = () => {
                     </clipPath>
                   </defs>
                 </svg>
-              </a>
+              </button>
             </span>
           </div>
 
