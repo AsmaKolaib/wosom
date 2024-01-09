@@ -49,17 +49,17 @@ const DesktopLayout = () => {
         <AnimatedComponent delay={100}>
           <Header />
         </AnimatedComponent>
-        <div className="py-20">
+        <div className="py-10">
           <AnimatedComponent delay={300}>
             <Partners />
           </AnimatedComponent>
         </div>
-        <div className="py-20">
+        <div className="py-10">
           <AnimatedComponent delay={500}>
             <Features />
           </AnimatedComponent>
         </div>
-        <div className="py-20">
+        <div className="py-10">
           <AnimatedComponent delay={700}>
             <Services />
           </AnimatedComponent>
@@ -69,17 +69,17 @@ const DesktopLayout = () => {
             <Prices />
           </AnimatedComponent>
         </div>
-        <div className="py-20">
+        <div className="py-10">
           <AnimatedComponent delay={950}>
             <Articles />
           </AnimatedComponent>
         </div>
-        <div className="py-20">
+        <div className="py-10">
           <AnimatedComponent delay={1000}>
             <FAQ />
           </AnimatedComponent>
         </div>
-        <div className="py-20">
+        <div className="py-10">
           <AnimatedComponent delay={1000}>
             <Contact />
           </AnimatedComponent>

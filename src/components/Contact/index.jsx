@@ -16,9 +16,9 @@ const index = () => {
             </p>
           </div>
 
-          <div className=" bg-white rounded-[8px]  lg:rounded-[16px] w-full p-2 lg:p-8 text-xs font-bold">
+          <div className=" bg-white rounded-2xl w-full p-2 lg:p-8 text-xs font-bold">
             <ul>
-              <li className="flex items-center bg-[#F1F0EC] px-4 py-2 rounded-[8px] mb-4">
+              <li className="flex items-center bg-[#F1F0EC] px-4 py-2 rounded-lg mb-4">
                 <span className=" mr-2 lg:mr-5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,7 @@ const index = () => {
                 </span>
                 @wosom.ai
               </li>
-              <li className=" flex items-center  bg-[#F1F0EC] px-4 py-2 rounded-[8px] mb-4">
+              <li className=" flex items-center  bg-[#F1F0EC] px-4 py-2 rounded-lg mb-4">
               <span className=" mr-2 lg:mr-5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +61,7 @@ const index = () => {
                 </span>
                 @wosom.ai
               </li>
-              <li className="flex items-center bg-[#F1F0EC] px-4 py-2 rounded-[8px] mb-4">
+              <li className="flex items-center bg-[#F1F0EC] px-4 py-3 rounded-lg mb-4">
               <span className=" mr-2 lg:mr-5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +84,7 @@ const index = () => {
             </ul>
           </div>
         </div>
-        <div className="w-full col-span-2 lg:bg-[#5933EF] lg:py-16  px-0 md:pl-8 lg:px-16  xl:px-32  rounded-[26px] ">
+        <div className="w-full col-span-2 lg:bg-[#5933EF] lg:py-16  px-0 md:pl-8 lg:px-16  xl:px-32  rounded-2xl ">
           <ContactForm />
         </div>
       </div>

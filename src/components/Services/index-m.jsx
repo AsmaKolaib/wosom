@@ -3,7 +3,7 @@ import HeroImg from "../../assets/imags/hero.jpg";
 
 export const BoxService = ({ img, text, title }) => {
   return (
-    <div className=" bg-white rounded-[14px] overflow-hidden px-6 pb-4 pt-6 h-fit">
+    <div className=" bg-white rounded-[14px] overflow-hidden px-6 pb-4 pt-6 h-full">
       <img src={img} alt="" className="rounded-[14px] w-full h-[200px] object-cover" />
       <div className="py-4">
         <div className="font-bold text-xl mb-2">{title}</div>
@@ -15,9 +15,7 @@ export const BoxService = ({ img, text, title }) => {
 
 const index = () => {
   const services = {
-    "Auto-Annotate":
-      "Use automatic labeling for large-scale commercial AI projects.",
-    Management:
+    "Management":
       "Maintain a well-structured and organized data repository with our intuitive data management tools. Easily upload, categorize, and search for your datasets, ensuring efficient data access and utilization.",
     "Text Annotation":
       "Generate alternative wordings and sentence structures, enhancing text clarity and flow.",
@@ -27,6 +25,9 @@ const index = () => {
       "Annotate audio recordings with precision, identifying and labeling speech, music, and environmental sounds.",
     "Video Annotation":
       "Automate object detection and segmentation with AI-powered tools, and annotate videos of any length with an intuitive user interface.",
+
+    "Auto-Annotate":
+      "Use automatic labeling for large-scale commercial AI projects.",
   };
   return (
     <section className=" px-2 my-8 h-full w-full">
@@ -40,9 +41,9 @@ const index = () => {
           </p>
         </div>
 
-        <div className="w-full">
+        <div className="grid grid-cols-2 gap-2">
           {Object.entries(services).map(([key, value]) => (
-            <div className="py-4">
+            <div className="py-4 ">
               <BoxService title={key} text={value} img={HeroImg} />
             </div>
           ))}

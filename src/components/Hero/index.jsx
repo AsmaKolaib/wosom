@@ -123,10 +123,7 @@ const index = () => {
               </div>
             </div>
             <div className=" flex flex-col text-base my-4 text-center px-10">
-              <p>
-                We save time, money, and resources by automating processes that
-                are tedious and prone to errors
-              </p>
+        
               <NavLink
                 to="#"
                 className=" lg:hidden md:flex justify-center items-center font-main font-bold mt-10 "

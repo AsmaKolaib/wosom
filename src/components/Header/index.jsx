@@ -21,11 +21,10 @@ const Header = () => {
   return (
     <>
       <section className=" relative flex flex-col w-full justify-between  text-black  hover:text-neutral-700  ">
-       
-       
-      <nav className=" absolute top-0 left-0 flex z-50 w-full justify-between py-2 md-px-0 lg:px-3 font-main font-bold text-lg lg:py-2">
-          <div className=" md:ml-4 lg:ml-10 flex w-2/4  justify-start items-center">
-            <NavLink className=" bg-white rounded-[8px]  px-6 py-3" to="#">
+      <nav className="  fixed top-0 left-0 flex z-50 w-full justify-between py-2 md:px-0  font-main font-bold text-lg lg:py-2">
+         
+          <div className=" pl-20 flex w-2/4  justify-start items-center">
+            <NavLink className=" bg-white rounded-[8px]  px-6 py-3" to="/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="80"
@@ -40,8 +39,8 @@ const Header = () => {
               </svg>
             </NavLink>
           </div>
-          <div className=" z-10 md:mr-4 lg:mr-10 flex w-2/4 items-center justify-end py-4 pl-4 pr-3">
-            <span className="bg-white rounded-[8px]  px-8 py-3 mr-4 ">
+          <div className="pr-20 z-10  flex w-2/4 items-center justify-end py-4 ">
+            <span className="bg-white rounded-[8px]  px-8 py-3 mr-5 ">
               <NavLink to="https://wosom.ai/login" className="font-main font-bold hover:opacity-90">
                 Sing up
               </NavLink>
@@ -95,8 +94,8 @@ const Header = () => {
 
           {nav && (
             <div
-              className={`pt-20 w-[292px] h-fit bg-[#adadad] rounded-[20px] p-3 absolute  right-[51px] transition ease-in duration-[1s]	
-              ${nav ? "  top-[17px]" : "top-[-1000px]"}
+              className={`pt-20 pb-5 w-[292px] h-fit bg-[#adadad] rounded-2xl p-3 absolute  right-[68px] transition ease-in duration-[1s]	
+              ${nav ? "  top-[2px]" : "top-[-1000px]"}
             `}
             >
               <div
@@ -117,6 +116,8 @@ const Header = () => {
             </div>
           )}
         </nav>
+       
+
         <Hero /> 
       </section>
 
