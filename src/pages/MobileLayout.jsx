@@ -51,22 +51,22 @@ const MoblieLayout = () => {
         <Header />
       </AnimatedComponent>
       <div className="container mx-auto">
-        <div className="py-10">
+        <div className="py-6">
           <AnimatedComponent delay={300}>
             <Partners />
           </AnimatedComponent>
         </div>
-        <div id="market" className="py-10">
+        <div id="market" className="py-6">
           <AnimatedComponent delay={500}>
             <Features />
           </AnimatedComponent>
         </div>
-        <div id="services" className="py-10">
+        <div id="services" className="py-6">
           <AnimatedComponent delay={700}>
             <Services />
           </AnimatedComponent>
         </div>
-        <div id="prices" className="py-10">
+        <div id="prices" className="py-6">
           <AnimatedComponent delay={900}>
             <Prices />
           </AnimatedComponent>
@@ -79,7 +79,7 @@ const MoblieLayout = () => {
         <AnimatedComponent delay={1000}>
           <FAQ />
         </AnimatedComponent>
-        <div id="Contact" className="py-10">
+        <div id="Contact" className="py-6">
           <AnimatedComponent delay={1000}>
             <Contact />
           </AnimatedComponent>
