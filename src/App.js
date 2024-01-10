@@ -16,9 +16,9 @@ function App() {
     Promise.all([font1.load(), font3.load()])
       .then(() => {
         // Fonts are loaded, wait for an additional 2000 milliseconds (2 seconds)
-        // setTimeout(() => {
+        setTimeout(() => {
           setLoading(false);
-        // }, 2000);
+        }, 2000);
       })
       .catch((error) => {
         console.error("Error loading fonts:", error);
