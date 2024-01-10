@@ -18,18 +18,18 @@ const index = () => {
         </div>
 
         <div className="w-full flex  items-end justify-end">
-              <div className=" w-2/4 p-8 pb-0 pr-0 ">
+        <div className=" w-2/4 p-1 ">
                 <img
                   src={Img2}
-                  alt=""
-                  className="w-[100%] h-[100%] rounded-lg "
+                  alt="WosomAI"
+                  className="w-[100%] h-[100%] rounded-xl "
                 />
               </div>
-              <div className="   w-2/3 p-2 pb-0 ">
+              <div className=" w-2/3 p-1 ">
                 <img
                   src={Img1}
-                  alt=""
-                  className="w-[100%] h-[100%] rounded-lg"
+                  alt="WosomAI"
+                  className="w-[100%] h-[100%] rounded-xl"
                 />
               </div>
             </div>

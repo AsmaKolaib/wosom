@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImg from "../../assets/ima.jpg";
+import HeroImg from "../../assets/imags/Hero (2).jpg";
 import Img1 from "../../assets/imags/2.png";
 import Img2 from "../../assets/imags/3.png";
 
@@ -26,7 +26,7 @@ const index = () => {
                   >
                     <image
                       href={HeroImg}
-                      height="100%"
+                      height="911px"
                       width="100%"
                       // x={0}
                       // y={0}
@@ -91,17 +91,17 @@ const index = () => {
               </p>
             </div>
             <div className="md:py-10 lg:py-0 w-full   flex items-center justify-center lg:items-end  lg:justify-end">
-              <div className=" w-2/4 p-8 pb-0 pr-0 ">
+              <div className=" w-2/4 p-1 ">
                 <img
                   src={Img2}
-                  alt=""
+                  alt="WosomAI"
                   className="w-[100%] h-[100%] rounded-xl "
                 />
               </div>
-              <div className="   w-2/3 p-2 pb-0 ">
+              <div className=" w-2/3 p-1 ">
                 <img
                   src={Img1}
-                  alt=""
+                  alt="WosomAI"
                   className="w-[100%] h-[100%] rounded-xl"
                 />
               </div>

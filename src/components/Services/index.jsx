@@ -1,5 +1,4 @@
 import React from "react";
-import HeroImg from "../../assets/imags/hero.jpg";
 import M from "../../assets/imags/m.jpg";
 import T from "../../assets/imags/T-01.jpg";
 import I from "../../assets/imags/I-01.jpg";
