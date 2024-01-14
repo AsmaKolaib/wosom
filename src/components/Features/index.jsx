@@ -25,7 +25,7 @@ const index = () => {
         <div className="flex flex-row items-start  w-full  h-full  relative bg-white  rounded-2xl">
           <div className="mr-4 flex flex-col justify-between  w-2/4 h-full p-6 ">
             <div className=" w-full lg:w-2/3  ">
-              <h1 className="font-main font-bold text-xl xl:text-4xl">
+              <h1 className="font-main font-bold text-lg xl:text-3xl">
                 Label Faster with <br /> Wasom AI
               </h1>
               <p className=" font-mainLight w-2/2 text-base md:text-lg xl:text-xl leading-[1.1] mt-5">

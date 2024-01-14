@@ -75,10 +75,10 @@ const index = () => {
             </div>
           </div>
           <div className="md:w-full lg:w-2/2  h-full flex flex-col justify-center items-center  md:justify-center md:items-start  pl-8  pt-20 ">
-            <div className=" w-full  flex flex-col justify-start font-main text-5xl font-bold capitalize  z-10">
+            <div className=" w-full  flex flex-col justify-start font-main text-6xl font-bold capitalize  z-10">
               <h1 className=" text-center lg:text-left relative z-[5] md:pt-5 lg:pt-0">
                 Seamless AI Data <br /> Collection
-                <span className="text-[#FFFFFF] font-mea lowercase font-light text-7xl md:ml-[-7px] lg:ml-[-4px] z-[-3] relative">
+                <span className="text-[#FFFFFF] font-mea lowercase font-light text-8xl md:ml-[-7px] lg:ml-[-4px] z-[-3] relative">
                   and
                 </span>
               </h1>

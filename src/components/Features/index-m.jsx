@@ -1,10 +1,12 @@
 import React from "react";
 import TempImg from "../../assets/imags/image Annotation.jpg";
+import TempImg2 from "../../assets/imags/dog.jpg";
+import TempImg3 from "../../assets/imags/img3.jpg";
 
 export const BoxFeature = ({ img, title }) => {
   return (
     <div className=" relative max-w-sm bg-white rounded-[40px] h-fit">
-      <img src={img} alt="" className="rounded-[14px] w-full h-[200px]" />
+      <img src={img} alt="" className="rounded-[14px] w-full h-[180px] object-cover " />
       <div className="  w-full text-white text-center px-20 ">
         <div className="absolute bottom-0 w-[80%] left-[17px] font-bold text-xs mb-2 rounded-[17px]  py-2   bg-black">
           {title}
@@ -19,17 +21,17 @@ const index = () => {
     <section className=" px-2 my-8 h-full w-full">
 
         <div className=" bg-white rounded-[14px] grid gap-6 grid-col-1 w-full  h-full  relative  px-4   ">
-          <div className="flex  justify-between w-2/2 h-full p-8 px-0">
-            <div className="w-2/3 pr-3 ">
-              <h1 className="font-main font-bold text-xl sm:text-2xl">
+          <div className="flex  justify-between w-2/2 h-full pt-8 px-2 ">
+            <div className="w-full pr-3 ">
+              <h1 className="font-main font-bold text-xl sm:text-2xl ">
                 Label Faster with <br /> Wasom AI
               </h1>
-              <p className=" font-mainLight w-2/2 text-sm sm:text-base leading-[1.1] mt-5">
+              <p className=" font-mainLight w-full text-sm sm:text-base leading-[1.1] mt-3">
                 Unlock rapid, precise, and scalable annotation capabilities with
                 our advanced AutoAnnotate feature
               </p>
             </div>
-            <div className="h-[28px] w-[150px] relative text-xs flex justify-center items-center bg-[#F1F0EC] rounded-full py-2">
+            {/* <div className="h-[28px] w-[150px] relative text-xs flex justify-center items-center bg-[#F1F0EC] rounded-full py-2">
               <a href="#"      className="absolute top-[-18px]  left-[-13px]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -75,14 +77,14 @@ const index = () => {
                   />
                 </svg>
               </a>
-            </div>
+            </div> */}
             </div>
           
-            <div className="grid grid-cols-2 justify-center items-center content-center gap-2 w-2/2 h-full py-10  ">
-            <BoxFeature title="AI-Powered Annotation" img={TempImg} />
-            <BoxFeature title="AI-Powered Annotation" img={TempImg} />
+            <div className="grid grid-cols-2 justify-center items-center content-center gap-2 w-2/2 h-full pb-4  ">
+            <BoxFeature title="Auto Annotation " img={TempImg} />
+            <BoxFeature title="Annotation Types" img={TempImg2} />
 
-            <BoxFeature title="AI-Powered Annotation" img={TempImg} />
+            <BoxFeature title="High quality" img={TempImg3} />
             <BoxFeature title="AI-Powered Annotation" img={TempImg} />
           </div>
           

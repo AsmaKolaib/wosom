@@ -45,32 +45,34 @@ const DesktopLayout = () => {
   return (
     <>
       {/* <ScrollToTop /> */}
-      <AnimatedComponent delay={100}>
-          <Header />
+      <AnimatedComponent  delay={100}>
+       <div id="home">
+       <Header />
+       </div>
         </AnimatedComponent>
       <div className="container mx-auto flex flex-col px-0 lg:px-10 ">
 
-        <div className="py-10">
+        <div className="py-10" >
           <AnimatedComponent delay={300}>
             <Partners />
           </AnimatedComponent>
         </div>
-        <div className="py-10">
+        <div  id="market" className="py-10">
           <AnimatedComponent delay={500}>
             <Features />
           </AnimatedComponent>
         </div>
-        <div className="py-10">
+        <div  id="services"  className="py-10">
           <AnimatedComponent delay={700}>
             <Services />
           </AnimatedComponent>
         </div>
-        <div className="py-10 pb-5">
+        <div id="prices" className="py-10 pb-5">
           <AnimatedComponent delay={900}>
             <Prices />
           </AnimatedComponent>
         </div>
-        <div className="py-10">
+        <div id="blog" className="py-10">
           <AnimatedComponent delay={950}>
             <Articles />
           </AnimatedComponent>
@@ -80,7 +82,7 @@ const DesktopLayout = () => {
             <FAQ />
           </AnimatedComponent>
         </div>
-        <div className="py-10">
+        <div id="contact" className="py-10">
           <AnimatedComponent delay={1000}>
             <Contact />
           </AnimatedComponent>

@@ -15,7 +15,7 @@ export const BoxService = ({ img, text, title }) => {
       />
       <div className="">
         <div className="font-bold text-xl pt-3 px-1 ">{title}</div>
-        <p className="text-gray-700 text-base md:text-lg xl:text-xl px-1 py-1">
+        <p className="text-gray-700 text-base  px-1 py-1">
           {text}
         </p>
       </div>
@@ -35,7 +35,6 @@ const index = () => {
             Our Services Showcase
           </p>
         </div>
-
         <div className="grid grid-cols-1  px-32">
         <div className="flex  flex-row  gap-8 w-full px-8 py-4">
         <div className=" h-full">
@@ -45,15 +44,14 @@ const index = () => {
               img={Management}
             />
           </div>
-          <div className=" h-full mt-5">
+          <div className="h-full ">
             <BoxService
               title="Text Annotation"
               text="Generate alternative wordings and sentence structures, enhancing text clarity and flow."
               img={TextAnnotation}
             />
           </div>
-
-          <div className=" h-full">
+          <div className="h-full">
             <BoxService
               title="image Annotation"
               text="Streamline your image annotation workflow with our robust tools, enabling efficient labeling of large image datasets for diverse AI applications."
@@ -61,7 +59,6 @@ const index = () => {
             />
           </div>
           </div>
-
           <div className="flex  flex-row  gap-x-8 w-full px-8 py-4">
             <div className=" h-full">
               <BoxService
@@ -70,8 +67,7 @@ const index = () => {
                 img={AudioAnnotation}
               />
             </div>
-
-            <div className=" h-full mt-5">
+            <div className=" h-full ">
               <BoxService
                 title="Video Annotation"
                 text="Automate object detection and segmentation with AI-powered tools, and annotate videos of any length with an intuitive user interface."

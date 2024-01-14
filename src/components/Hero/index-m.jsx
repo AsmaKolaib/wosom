@@ -7,7 +7,7 @@ const index = () => {
   return (
     <section className="   ">
       <div className="grid grid-cols-1 gap-y-4 w-2/2 px-4 pt-32 h-full">
-        <div className=" font-main text-4xl font-bold capitalize leading-[.5] z-10">
+        <div className=" text-center font-main text-4xl font-bold capitalize leading-[.5] z-10">
           <h1 className=" relative z-[5]">
             Seamless AI Data Collection{" "}
             <span className="text-[#FFFFFF] font-mea lowercase font-light text-8xl ml-[-13px] z-[-3] relative">
@@ -17,7 +17,7 @@ const index = () => {
           <h1 className=" text-center leading-[1]">Labeling </h1>
         </div>
 
-        <div className="w-full flex  items-end justify-end">
+        {/* <div className="w-full flex  items-end justify-end">
         <div className=" w-2/4 p-1 ">
                 <img
                   src={Img2}
@@ -32,7 +32,7 @@ const index = () => {
                   className="w-[100%] h-[100%] rounded-xl"
                 />
               </div>
-            </div>
+            </div> */}
         <div>
           <div className=" flex flex-col text-base my-4 text-center ">
             <p>

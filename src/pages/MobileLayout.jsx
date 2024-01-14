@@ -1,4 +1,4 @@
-import React ,{useEffect} from "react";
+import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Header from "../components/Header/index-m";
@@ -48,25 +48,27 @@ const MoblieLayout = () => {
     <>
       <ScrollToTop />
       <AnimatedComponent delay={100}>
-        <Header />
+        <div id="home">
+          <Header />
+        </div>
       </AnimatedComponent>
       <div className="container mx-auto">
-        <div className="py-6">
+        <div className="pt-6">
           <AnimatedComponent delay={300}>
             <Partners />
           </AnimatedComponent>
         </div>
-        <div id="market" className="py-6">
+        <div id="market" className="pt-6">
           <AnimatedComponent delay={500}>
             <Features />
           </AnimatedComponent>
         </div>
-        <div id="services" className="py-6">
+        <div id="services" className="pt-6">
           <AnimatedComponent delay={700}>
             <Services />
           </AnimatedComponent>
         </div>
-        <div id="prices" className="py-6">
+        <div id="prices" className="pt-6 px-2">
           <AnimatedComponent delay={900}>
             <Prices />
           </AnimatedComponent>
@@ -79,7 +81,7 @@ const MoblieLayout = () => {
         <AnimatedComponent delay={1000}>
           <FAQ />
         </AnimatedComponent>
-        <div id="Contact" className="py-6">
+        <div id="contact" className="py-6">
           <AnimatedComponent delay={1000}>
             <Contact />
           </AnimatedComponent>

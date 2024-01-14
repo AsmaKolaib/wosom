@@ -1,10 +1,10 @@
 import React from "react";
-import M from "../../assets/imags/m.jpg";
-import T from "../../assets/imags/T-01.jpg";
-import I from "../../assets/imags/I-01.jpg";
-import A from "../../assets/imags/A-01.jpg";
-import V from "../../assets/imags/V-01.jpg";
-import A2 from "../../assets/imags/Auto-01.jpg";
+import AudioAnnotation from "../../assets/imags/Audio Annotation.png";
+import VideoAnnotation from "../../assets/imags/Video Annotation.png";
+import ImageAnnotation from "../../assets/imags/image Annotation.jpg";
+import TextAnnotation from "../../assets/imags/Text Annotation.png";
+import Management from "../../assets/imags/Management.png";
+import AutoAnnotate from "../../assets/imags/Auto-Annotate.jpeg";
 export const BoxService = ({ img, text, title }) => {
   return (
     <div className=" bg-white rounded-[14px] overflow-hidden px-6 pb-4 pt-6 h-full">
@@ -22,21 +22,7 @@ export const BoxService = ({ img, text, title }) => {
 };
 
 const index = () => {
-  const services = {
-    Management:
-      "Maintain a well-structured and organized data repository with our intuitive data management tools. Easily upload, categorize, and search for your datasets, ensuring efficient data access and utilization.",
-    "Text Annotation":
-      "Generate alternative wordings and sentence structures, enhancing text clarity and flow.",
-    "image Annotation":
-      "Streamline your image annotation workflow with our robust tools, enabling efficient labeling of large image datasets for diverse AI applications.",
-    "Audio Annotation":
-      "Annotate audio recordings with precision, identifying and labeling speech, music, and environmental sounds.",
-    "Video Annotation":
-      "Automate object detection and segmentation with AI-powered tools, and annotate videos of any length with an intuitive user interface.",
 
-    "Auto-Annotate":
-      "Use automatic labeling for large-scale commercial AI projects.",
-  };
   return (
     <section className=" px-2 my-8 h-full w-full">
       <div className="grid w-full  h-full gap-0  relative p-4 ">
@@ -54,44 +40,42 @@ const index = () => {
             <BoxService
               title="Management"
               text="Maintain a well-structured and organized data repository with our intuitive data management tools. Easily upload, categorize, and search for your datasets, ensuring efficient data access and utilization."
-              img={M}
+              img={Management}
             />
           </div>
           <div className="py-4 h-full">
             <BoxService
               title="Text Annotation"
               text="Generate alternative wordings and sentence structures, enhancing text clarity and flow."
-              img={T}
+              img={TextAnnotation}
             />
           </div>
           <div className="py-4 h-full">
             <BoxService
               title="image Annotation"
               text="Streamline your image annotation workflow with our robust tools, enabling efficient labeling of large image datasets for diverse AI applications."
-              img={I}
+              img={ImageAnnotation}
             />
           </div>
-
           <div className="py-4 h-full">
             <BoxService
               title="Audio Annotation"
               text="Annotate audio recordings with precision, identifying and labeling speech, music, and environmental sounds."
-              img={A}
+              img={AutoAnnotate}
             />
           </div>
-
           <div className="py-4 h-full">
             <BoxService
               title="Video Annotation"
               text="Automate object detection and segmentation with AI-powered tools, and annotate videos of any length with an intuitive user interface."
-              img={V}
+              img={VideoAnnotation}
             />
           </div>
           <div className="py-4 h-full">
             <BoxService
               title="Auto-Annotate"
               text="Use automatic labeling for large-scale commercial AI projects."
-              img={A2}
+              img={AudioAnnotation}
             />
           </div>
         </div>
