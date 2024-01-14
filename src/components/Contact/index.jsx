@@ -6,7 +6,7 @@ const index = () => {
       <div className=" p-0 lg:p-8 grid gap-4 lg:gap-8 xl:gap-16 items-center justify-center grid-cols-3 w-full  lg:grid-cols-3 ">
         <div className=" flex flex-col justify-between items-center divide-y  divide-gray-200 h-full w-full">
           <div className=" w-full lg:mt-10 ">
-            <h1 className="font-main font-bold text-3xl">
+            <h1 className="font-main font-bold text-lg xl:text-3xl">
               We're Here to <br /> Help
             </h1>
             <p className=" font-mainLight text-base md:text-lg xl:text-xl leading-[1.1] mt-5">

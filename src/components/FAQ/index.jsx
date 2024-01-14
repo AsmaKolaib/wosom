@@ -4,8 +4,8 @@ import { questions } from "./questions";
 const index = () => {
   return (
     <div className="flex justify-between flex-col lg:flex-row  items-start  ">
-      <div className=" w-full lg:w-2/3 lg:p-8  ">
-        <h1 className="font-main font-bold text-3xl">
+      <div className=" w-full lg:w-2/3 lg:p-8 lg:pt-0 ">
+        <h1 className="font-main font-bold text-lg xl:text-3xl">
           Frequently Asked <br /> Questions
         </h1>
         <p className=" font-mainLight lg:w-2/3 text-base md:text-lg xl:text-xl leading-[1.1] mt-5">

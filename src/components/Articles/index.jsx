@@ -9,7 +9,7 @@ const Article = () => {
       <div className="flex flex-col justify-between rounded-2xl h-auto bg-main-color px-6 py-8">
         <div className="flex justify-between">
           <div className="mt-4 h-full  w-full lg:w-2/6 lg:pl-8">
-            <h1 className=" font-main  font-semibold text-3xl">
+            <h1 className=" font-main  font-semibold text-lg xl:text-3xl">
               Get Hands-on with <br/> This Interactive Guide
             </h1>
             <p className=" font-mainLight text-base md:text-lg xl:text-xl pt-4">

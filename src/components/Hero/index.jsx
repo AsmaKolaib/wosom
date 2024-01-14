@@ -90,14 +90,14 @@ const index = () => {
                 are tedious and prone to errors
               </p>
             </div>
-            <div className=" lg:py-0 w-full flex items-end justify-center h-full">
-            <div className="w-full   h-80">
+            {/* <div className=" lg:py-0 w-full flex items-end justify-center h-full"> */}
+            {/* <div className="w-full   h-80">
                 <img
                   src={Img1}
                   alt="WosomAI"
                   className="w-[100%] h-[100%] rounded-xl object-cover object-top"
                 />
-              </div>
+              </div> */}
               {/* <div className=" h-80">
                 <img
                   src={Img2}
@@ -106,7 +106,7 @@ const index = () => {
                 />
               </div> */}
          
-            </div>
+            {/* </div> */}
          
           </div>
         </div>

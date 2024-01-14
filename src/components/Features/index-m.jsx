@@ -1,5 +1,5 @@
 import React from "react";
-import TempImg from "../../assets/imags/img.jpg";
+import TempImg from "../../assets/imags/image Annotation.jpg";
 
 export const BoxFeature = ({ img, title }) => {
   return (

@@ -1,8 +1,10 @@
 import React from "react";
-import TempImg from "../../assets/imags/img.jpg";
+import TempImg from "../../assets/imags/image Annotation.jpg";
 import { NavLink } from "react-router-dom";
 import TempImg2 from "../../assets/imags/dog.jpg";
 import TempImg3 from "../../assets/imags/img3.jpg";
+
+
 export const BoxFeature = ({ img, title }) => {
   return (
     <div className=" relative max-w-sm bg-white  rounded-2xl h-fit ">
@@ -20,8 +22,8 @@ const index = () => {
   return (
     <section>
       <div className="h-full w-full">
-        <div className="flex flex-row items-start  w-full  h-full  relative  ">
-          <div className="mr-4 flex flex-col justify-between  w-2/4 h-full rounded-2xl p-6 ">
+        <div className="flex flex-row items-start  w-full  h-full  relative bg-white  rounded-2xl">
+          <div className="mr-4 flex flex-col justify-between  w-2/4 h-full p-6 ">
             <div className=" w-full lg:w-2/3  ">
               <h1 className="font-main font-bold text-xl xl:text-4xl">
                 Label Faster with <br /> Wasom AI
@@ -78,7 +80,7 @@ const index = () => {
               </NavLink>
             </div> */}
           </div>
-          <div className="  grid grid-cols-2 justify-center items-center content-center gap-2 lg:gap-6 w-2/4 h-full   ">
+          <div className="  grid grid-cols-2 justify-center items-center content-center gap-2 lg:gap-6 w-2/4 h-full p-6 ">
             <BoxFeature title="Auto Annotation  " img={TempImg} />
             <BoxFeature title="Annotation Types  " img={TempImg2} />
 

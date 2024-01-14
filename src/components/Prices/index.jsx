@@ -4,7 +4,7 @@ import "./style.css";
 const Prices = () => {
   return (
     <div className="w-full  font-main ">
-      <h1 className="text-center font-extrabold capitalize text-5xl block w-full ">
+      <h1 className="text-center font-extrabold capitalize text-lg xl:text-3xl block w-full ">
         Our Price plan
       </h1>
       <div className="flex justify-center items-center my-4">
