@@ -5,7 +5,7 @@ import Img2 from "../../assets/imags/3.png";
 import { NavLink } from "react-router-dom";
 const index = () => {
   return (
-    <section className="absolute   ">
+    <section className="   ">
       <div className="grid grid-cols-1 gap-y-4 w-2/2 px-4 pt-32 h-full">
         <div className=" font-main text-4xl font-bold capitalize leading-[.5] z-10">
           <h1 className=" relative z-[5]">

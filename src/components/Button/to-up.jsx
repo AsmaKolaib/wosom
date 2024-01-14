@@ -27,7 +27,9 @@ const ScrollToTop = () => {
   }, []);
 
   return (
-    <div className="fixed bottom-10 right-10 z-50">
+    <div className=" container m-auto   w-full justify-between   ">
+    <div className="fixed pr-5  md:pr-10 lg:pr-20 container  m-auto  bottom-10 z-50 flex justify-end  ">
+    {/* <div className="fixed bottom-10 right-10 z-50 container m-auto "> */}
       <button
         type="button"
         onClick={scrollToTop}
@@ -54,6 +56,7 @@ const ScrollToTop = () => {
           />
         </svg>
       </button>
+    </div>
     </div>
   );
 };

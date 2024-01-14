@@ -18,7 +18,7 @@ const Header = () => {
   };
 
   return (
-    <section className="relative px-4 py-3 h-screen w-full">
+    <section className="relative px-4 py-3  w-full">
       <nav className="fixed flex w-full justify-between z-50  py-2 font-main font-bold text-sm ">
         <div className=" flex w-fit justify-start items-center">
           <NavLink className=" bg-white rounded-[8px]  px-2 py-3" to="/">

@@ -1,12 +1,12 @@
 import React from "react";
-import HeroImg from "../../assets/imags/Hero (2).jpg";
-import Img1 from "../../assets/imags/2.png";
-import Img2 from "../../assets/imags/3.png";
+import HeroImg from "../../assets/imags/hero.jpg";
+import Img1 from "../../assets/imags/img4.png";
+import Img2 from "../../assets/imags/img1.jpg"
 
 import { NavLink } from "react-router-dom";
 const index = () => {
   return (
-    <section className=" h-full lg:h-screen xl:h-full w-full  ">
+    <section className=" h-full lg:h-fit xl:h-full w-full  ">
       <div className="h-full">
         <div className="grid  h-full gap-0 grid-cols-1 lg:grid-cols-[1.3fr_1fr] relative  ">
           <div className="md:hidden  lg:block relative w-2/2  p-0 h-[100%] ">
@@ -26,7 +26,7 @@ const index = () => {
                   >
                     <image
                       href={HeroImg}
-                      height="911px"
+                      height="100%"
                       width="100%"
                       // x={0}
                       // y={0}
@@ -74,7 +74,7 @@ const index = () => {
               </svg>
             </div>
           </div>
-          <div className="md:w-full lg:w-2/2 flex flex-col justify-center items-center  md:justify-center md:items-start  pl-8  pt-20 ">
+          <div className="md:w-full lg:w-2/2  h-full flex flex-col justify-center items-center  md:justify-center md:items-start  pl-8  pt-20 ">
             <div className=" w-full  flex flex-col justify-start font-main text-5xl font-bold capitalize  z-10">
               <h1 className=" text-center lg:text-left relative z-[5] md:pt-5 lg:pt-0">
                 Seamless AI Data <br /> Collection
@@ -84,51 +84,30 @@ const index = () => {
               </h1>
               <h1 className=" text-center leading-[1] pl-20">Labeling </h1>
             </div>
-            <div className="md:hidden lg:flex md:w-full lg:w-2/4 text-base py-6 md:px-32 lg:px-0 md:text-center lg:text-left   ">
+            <div className="md:hidden lg:flex md:w-full lg:w-2/4 text-base md:text-lg xl:text-xl py-6 md:px-32 lg:px-0 md:text-center lg:text-left   ">
               <p>
                 We save time, money, and resources by automating processes that
                 are tedious and prone to errors
               </p>
             </div>
-            <div className="md:py-10 lg:py-0 w-full   flex items-center justify-center lg:items-end  lg:justify-end">
-              <div className=" w-2/4 p-1 ">
-                <img
-                  src={Img2}
-                  alt="WosomAI"
-                  className="w-[100%] h-[100%] rounded-xl "
-                />
-              </div>
-              <div className=" w-2/3 p-1 ">
+            <div className=" lg:py-0 w-full flex items-end justify-center h-full">
+            <div className="w-full   h-80">
                 <img
                   src={Img1}
                   alt="WosomAI"
-                  className="w-[100%] h-[100%] rounded-xl"
+                  className="w-[100%] h-[100%] rounded-xl object-cover object-top"
                 />
               </div>
+              {/* <div className=" h-80">
+                <img
+                  src={Img2}
+                  alt="WosomAI"
+                  className="w-[100%] h-[100%] rounded-xl  "
+                />
+              </div> */}
+         
             </div>
-            <div className=" flex flex-col text-base my-4 text-center px-10">
-              <NavLink
-                to="#"
-                className=" lg:hidden md:flex justify-center items-center font-main font-bold mt-10 "
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="36"
-                  height="56"
-                  viewBox="0 0 86 86"
-                  fill="none"
-                  className="mr-2"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M43 86C66.748 86 86 66.748 86 43C86 19.252 66.748 0 43 0C19.252 0 0 19.252 0 43C0 66.748 19.252 86 43 86ZM30 32V50C30 51.1045 30.8945 52 32 52C33.1055 52 34 51.1045 34 50V36.8281L51.5859 54.4141C52.3672 55.1953 53.6328 55.1953 54.4141 54.4141C55.1953 53.6328 55.1953 52.3672 54.4141 51.5859L36.8281 34H50C51.1055 34 52 33.1045 52 32C52 30.8955 51.1055 30 50 30H32C30.8945 30 30 30.8955 30 32Z"
-                    fill="black"
-                  />
-                </svg>
-                Try it for free now
-              </NavLink>
-            </div>
+         
           </div>
         </div>
       </div>

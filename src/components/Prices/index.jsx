@@ -8,24 +8,24 @@ const Prices = () => {
         Our Price plan
       </h1>
       <div className="flex justify-center items-center my-4">
-        <p className="text-center  items-center md:w-3/5 lg:w-3/12  ">
+        <p className="text-center  items-center md:w-3/5 lg:w-2/6   text-base md:text-lg xl:text-xl">
           We plan the pricing based on the services , you can pick a plan thats
           works for you
         </p>
       </div>
 
       <div className="flex justify-center items-center my-16">
-        <table className="w-[90%] border-collapse text-center text-base">
+        <table className="w-[90%] border-collapse text-center text-base md:text-lg xl:text-xl">
           <thead>
             <tr>
               <th colspan="2" className="w-32"></th>
-              <th className=" font-normal py-4  text-left pr-11 pl-20">
+              <th className=" font-normal py-4  text-left pr-5 pl-6">
                 Number of Objects
               </th>
-              <th className=" font-normal py-4  text-left  pr-11 pl-20">
+              <th className=" font-normal py-4  text-left  pr-5 pl-6">
                 Annotations Per Object
               </th>
-              <th className=" font-normal py-4  text-left  pr-11 pl-20">
+              <th className=" font-normal py-4  text-left  pr-5 pl-6">
                 Time Frame in Days
               </th>
               <th className=" font-normal py-4  text-center  px-16 ">Price</th>
@@ -82,7 +82,7 @@ const Prices = () => {
         </table>
       </div>
       <div className="flex justify-center items-center my-6">
-        <p className="text-center  items-center md:w-3/5 lg:w-3/12  ">
+        <p className="text-center  items-center md:w-3/5 lg:w-2/6 text-base md:text-lg xl:text-xl ">
           If you are interested in a custom plan, please reach out to us at{" "}
           <a href="mailto:wosom@dataplume.com" className="text-blue-500">
             {" "}

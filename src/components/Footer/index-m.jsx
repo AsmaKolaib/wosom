@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../assets/imags/logo.png";
 import { NavLink } from "react-router-dom";
+import ScrollToTop from "../../components/Button/to-up";
 const index = () => {
   const links = {
     "service": "Service",
@@ -13,13 +14,14 @@ const index = () => {
   return (
 
     <footer className="relative bg-black text-[#D2D2D2]  pt-8 pb-6 mt-5 h-fit">
+        <ScrollToTop />
       <div className="container mx-auto ">
         <div className="px-8">
           <img src={logo} alt="Wosom" width={80} height={0} />
         </div>
         <div className="flex flex-wrap text-left px-8">
           <div className="w-full  ">
-            <p className="text-lg mt-4 pr-20 ">
+            <p className="text-lg mt-4  ">
               We save time, money, and resources by automating processes that
               are tedious and prone to errors
             </p>

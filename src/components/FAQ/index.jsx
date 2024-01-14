@@ -8,7 +8,7 @@ const index = () => {
         <h1 className="font-main font-bold text-3xl">
           Frequently Asked <br /> Questions
         </h1>
-        <p className=" font-mainLight  lg:w-2/4 text-base leading-[1.1] mt-5">
+        <p className=" font-mainLight lg:w-2/3 text-base md:text-lg xl:text-xl leading-[1.1] mt-5">
           Whether you're seeking product information, technical support, or
           general guidance, we're here to support you. Drop us a message, and
           we'll respond promptly to address your needs

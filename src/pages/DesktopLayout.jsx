@@ -10,7 +10,7 @@ import Articles from "../components/Articles";
 import FAQ from "../components/FAQ";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import ScrollToTop from "../components/Button/to-up";
+
 
 const AnimatedComponent = ({ children, delay = 0 }) => {
   const controls = useAnimation();
@@ -44,11 +44,12 @@ const AnimatedComponent = ({ children, delay = 0 }) => {
 const DesktopLayout = () => {
   return (
     <>
-      <ScrollToTop />
-      <div className="container mx-auto flex flex-col px-0 lg:px-10">
-        <AnimatedComponent delay={100}>
+      {/* <ScrollToTop /> */}
+      <AnimatedComponent delay={100}>
           <Header />
         </AnimatedComponent>
+      <div className="container mx-auto flex flex-col px-0 lg:px-10 ">
+
         <div className="py-10">
           <AnimatedComponent delay={300}>
             <Partners />
@@ -64,7 +65,7 @@ const DesktopLayout = () => {
             <Services />
           </AnimatedComponent>
         </div>
-        <div className="pb-20">
+        <div className="py-10 pb-5">
           <AnimatedComponent delay={900}>
             <Prices />
           </AnimatedComponent>

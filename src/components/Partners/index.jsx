@@ -16,24 +16,24 @@ const index = () => {
 
   return (
     <section className=" w-full">
-      <div className=" h-full flex justify-around m-auto w-full  pt-20 ">
+      <div className=" h-full flex justify-around m-auto w-full  pt-9">
         <div className="bg-white flex justify-between items-center w-full h-full rounded-2xl p-6 py-10 ">
           <div className=" h-full w-fit mr-14">
             <h1 className="  font-main  font-semibold text-lg xl:text-3xl">
               Our Commitment to <br /> Delivering a Trusted AI <br />
               Experience
             </h1>
-            <p className=" font-mainLight text-base pt-4">
+            <p className=" font-mainLight text-base md:text-lg xl:text-xl pt-4">
               Partners how trust us
             </p>
           </div>
-          <div className="flex  flex-grow flex-row justify-between items-center">
+          <div className="flex  flex-grow flex-row justify-end items-center">
             {Object.entries(partners).map(([key, value]) => (
               <img
                 src={value}
                 alt={key}
                 className="
-                  w-[103px] h-[83px]"
+                  w-[103px] h-[83px] mx-2"
               />
             ))}
           </div>

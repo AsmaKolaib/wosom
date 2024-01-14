@@ -12,7 +12,7 @@ const Article = () => {
             <h1 className=" font-main  font-semibold text-3xl">
               Get Hands-on with <br/> This Interactive Guide
             </h1>
-            <p className=" font-mainLight text-base pt-4">
+            <p className=" font-mainLight text-base md:text-lg xl:text-xl pt-4">
               Delve into the world of AI and labeling: Discover its
               applications, practical usage, and how AI can transform your
               business.
