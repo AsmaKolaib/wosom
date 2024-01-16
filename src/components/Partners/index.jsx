@@ -16,8 +16,8 @@ const index = () => {
 
   return (
     <section className=" w-full">
-      <div className=" h-full flex justify-around m-auto w-full  pt-9">
-        <div className=" flex flex-col justify-between items-center w-full h-full rounded-2xl p-6 py-10 ">
+      <div className=" h-full flex justify-around m-auto w-full ">
+        <div className=" flex flex-col  w-full h-full ">
           {/* <div className=" h-full w-fit mr-14">
             <h1 className="  font-main  font-semibold text-lg xl:text-3xl">
               Our Commitment to <br /> Delivering a Trusted AI <br />
@@ -27,8 +27,8 @@ const index = () => {
               Partners how trust us
             </p>
           </div> */}
-
-          <div className="flex  flex-grow flex-row justify-evenly items-center w-full">
+          <h4 className=" font-mainLight text-gray-500  text-base md:text-sm xl:text-sm text-left w-full">Trusted By</h4>
+          <div className="flex  flex-grow flex-row justify-evenly items-center w-full ">
             {/* {Object.entries(partners).map(([key, value]) => ( */}
             <img
               src={MohamedBinZayed}

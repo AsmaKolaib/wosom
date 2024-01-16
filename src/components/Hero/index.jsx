@@ -1,7 +1,7 @@
 import React from "react";
 import HeroImg from "../../assets/imags/hero.jpg";
 import Img1 from "../../assets/imags/img4.png";
-import Img2 from "../../assets/imags/img1.jpg"
+import Img2 from "../../assets/imags/img1.jpg";
 import Partners from "../Partners//index";
 
 import { NavLink } from "react-router-dom";
@@ -79,7 +79,7 @@ const index = () => {
             <div className=" w-full  flex flex-col justify-start font-main text-6xl font-bold capitalize  z-10">
               <h1 className=" text-center lg:text-left relative z-[5] md:pt-5 lg:pt-0">
                 Seamless AI Data <br /> Collection
-                <span className="text-[#FFFFFF] font-mea lowercase font-light text-8xl md:ml-[-7px] lg:ml-[-4px] z-[-3] relative">
+                <span className="text-[#BDB7B7] font-mea lowercase font-light text-8xl md:ml-[-7px] lg:ml-[-4px] z-[-3] relative">
                   and
                 </span>
               </h1>
@@ -99,16 +99,19 @@ const index = () => {
                   className="w-[100%] h-[100%] rounded-xl object-cover object-top"
                 />
               </div> */}
-              {/* <div className=" h-80">
+            {/* <div className=" h-80">
                 <img
                   src={Img2}
                   alt="WosomAI"
                   className="w-[100%] h-[100%] rounded-xl  "
                 />
               </div> */}
-         
+
             {/* </div> */}
-         <Partners/>
+          <div className=" lg:py-0 w-full flex items-end justify-end h-full"> 
+              {" "}
+              <Partners />
+            </div>
           </div>
         </div>
       </div>

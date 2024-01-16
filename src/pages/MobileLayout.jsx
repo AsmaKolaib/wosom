@@ -53,11 +53,11 @@ const MoblieLayout = () => {
         </div>
       </AnimatedComponent>
       <div className="container mx-auto">
-        <div className="pt-6">
+        {/* <div className="pt-6">
           <AnimatedComponent delay={300}>
             <Partners />
           </AnimatedComponent>
-        </div>
+        </div> */}
         <div id="market" className="pt-6">
           <AnimatedComponent delay={500}>
             <Features />
@@ -68,7 +68,7 @@ const MoblieLayout = () => {
             <Services />
           </AnimatedComponent>
         </div>
-        <div id="prices" className="pt-6 px-2">
+        <div id="prices" className="pt-6 px-2 bg-white">
           <AnimatedComponent delay={900}>
             <Prices />
           </AnimatedComponent>

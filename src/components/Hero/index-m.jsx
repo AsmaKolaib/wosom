@@ -1,6 +1,7 @@
 import React from "react";
 import Img1 from "../../assets/imags/2.png";
 import Img2 from "../../assets/imags/3.png";
+import Partners from "../Partners//index-m";
 
 import { NavLink } from "react-router-dom";
 const index = () => {
@@ -10,7 +11,7 @@ const index = () => {
         <div className=" text-center font-main text-4xl font-bold capitalize leading-[.5] z-10">
           <h1 className=" relative z-[5]">
             Seamless AI Data Collection{" "}
-            <span className="text-[#FFFFFF] font-mea lowercase font-light text-8xl ml-[-13px] z-[-3] relative">
+            <span className="text-[#BDB7B7] font-mea lowercase font-light text-8xl ml-[-13px] z-[-3] relative">
               and
             </span>
           </h1>
@@ -61,6 +62,7 @@ const index = () => {
               Try it for free now
             </NavLink>
           </div>
+          <Partners/>
         </div>
       </div>
     </section>

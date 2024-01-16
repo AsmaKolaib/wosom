@@ -12,7 +12,7 @@ const Prices = () => {
   };
 
   return (
-    <div className="w-full py-8 bg-white font-main ">
+    <div className="w-full py-8  font-main ">
       <h1 className="text-center font-extrabold capitalize text-3xl block w-full ">
         Our Price plan
       </h1>

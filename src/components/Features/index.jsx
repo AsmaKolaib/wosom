@@ -38,7 +38,7 @@ const Index = () => {
       <BoxFeature title="Audio Annotation" img={TempImg6} />
       <BoxFeature title="Management" img={TempImg7} />
     </>,
-  ]; // Update with your array of elements
+  ]; 
 
   const handleNext = () => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % totalSlides.length);
@@ -64,7 +64,7 @@ const Index = () => {
           </div>
           <div className=" ml-2 w-[150px] relative  flex justify-center items-center bg-[#F1F0EC] rounded-full text-base py-2">
             <NavLink
-              href="#"
+  
               className="absolute top-[-20px] left-[-25px]"
               onClick={(e) => {
                 e.preventDefault();
@@ -97,7 +97,7 @@ const Index = () => {
               {currentSlide + 1}/{totalSlides.length}
             </h3>
             <NavLink
-              href="#"
+      
               className="absolute top-[-20px] right-[-25px]"
               onClick={(e) => {
                 e.preventDefault();
