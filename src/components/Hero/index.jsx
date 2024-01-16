@@ -75,7 +75,7 @@ const index = () => {
               </svg>
             </div>
           </div>
-          <div className="md:w-full lg:w-2/2  h-full flex flex-col justify-center items-center  md:justify-center md:items-start  pl-8  pt-20 ">
+          <div className="md:w-full lg:w-2/2  h-full flex flex-col justify-center items-center  md:justify-center md:items-start  pl-8 pt-28 ">
             <div className=" w-full  flex flex-col justify-start font-main text-6xl font-bold capitalize  z-10">
               <h1 className=" text-center lg:text-left relative z-[5] md:pt-5 lg:pt-0">
                 Seamless AI Data <br /> Collection
