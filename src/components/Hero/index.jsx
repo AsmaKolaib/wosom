@@ -2,6 +2,7 @@ import React from "react";
 import HeroImg from "../../assets/imags/hero.jpg";
 import Img1 from "../../assets/imags/img4.png";
 import Img2 from "../../assets/imags/img1.jpg"
+import Partners from "../Partners//index";
 
 import { NavLink } from "react-router-dom";
 const index = () => {
@@ -107,7 +108,7 @@ const index = () => {
               </div> */}
          
             {/* </div> */}
-         
+         <Partners/>
           </div>
         </div>
       </div>

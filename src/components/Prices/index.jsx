@@ -3,7 +3,7 @@ import "./style.css";
 
 const Prices = () => {
   return (
-    <div className="w-full  font-main ">
+    <div className="w-full  font-main bg-white py-8 ">
       <h1 className="text-center font-extrabold capitalize text-lg xl:text-3xl block w-full ">
         Our Price plan
       </h1>

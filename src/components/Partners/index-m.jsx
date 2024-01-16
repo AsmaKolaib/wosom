@@ -1,9 +1,9 @@
 import React from "react";
-import ELM from "../../assets/imags/ELM.png";
-import kindAbdelaziz from "../../assets/imags/kind Abdelaziz.png";
-import sdara from "../../assets/imags/sdara.png";
-import KingSaud from "../../assets/imags/King saud.png";
-import MohamedBinZayed from "../../assets/imags/Mohamed bin zayed.png";
+import ELM from "../../assets/imags/ELM1.png";
+import kindAbdelaziz from "../../assets/imags/kind Abdelaziz1.png";
+import sdara from "../../assets/imags/sdara1.png";
+import KingSaud from "../../assets/imags/King saud1.png";
+import MohamedBinZayed from "../../assets/imags/Mohamed bin zayed1.png";
 
 const index = () => {
   const partners = {

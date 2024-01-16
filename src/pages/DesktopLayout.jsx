@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Header from "../components/Header";
-import Partners from "../components/Partners";
+// import Partners from "../components/Partners";
 import Features from "../components/Features";
 import Services from "../components/Services";
 import Prices from "../components/Prices";
@@ -10,8 +10,7 @@ import Articles from "../components/Articles";
 import FAQ from "../components/FAQ";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-
-
+import Datasets from "../components/Datasets";
 const AnimatedComponent = ({ children, delay = 0 }) => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
@@ -34,7 +33,10 @@ const AnimatedComponent = ({ children, delay = 0 }) => {
       ref={ref}
       initial="hidden"
       animate={controls}
-      variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
+      variants={{
+        hidden: { opacity: 0, y: 20 },
+        visible: { opacity: 1, y: 0 },
+      }}
     >
       {children}
     </motion.div>
@@ -45,31 +47,41 @@ const DesktopLayout = () => {
   return (
     <>
       {/* <ScrollToTop /> */}
-      <AnimatedComponent  delay={100}>
-       <div id="home">
-       <Header />
-       </div>
-        </AnimatedComponent>
+      <AnimatedComponent delay={100}>
+        <div id="home" className="mb-10">
+          <Header />
+        </div>
+      </AnimatedComponent>
       <div className="container mx-auto flex flex-col px-0 lg:px-10 ">
-
+        {/* 
         <div className="py-10" >
           <AnimatedComponent delay={300}>
             <Partners />
           </AnimatedComponent>
-        </div>
-        <div  id="market" className="py-10">
+        </div> */}
+        <div id="market" className="py-10">
           <AnimatedComponent delay={500}>
             <Features />
           </AnimatedComponent>
         </div>
-        <div  id="services"  className="py-10">
+        <div id="services" className="py-10">
           <AnimatedComponent delay={700}>
             <Services />
           </AnimatedComponent>
         </div>
-        <div id="prices" className="py-10 pb-5">
-          <AnimatedComponent delay={900}>
+      </div>
+      <div id="prices" className="my-10  bg-white ">
+        <AnimatedComponent delay={900}>
+          <div className="container mx-auto flex flex-col px-0 lg:px-10 ">
             <Prices />
+          </div>
+        </AnimatedComponent>
+      </div>
+     
+      <div className="container mx-auto flex flex-col px-0 lg:px-10 ">
+      <div id="blog" className="py-10">
+          <AnimatedComponent delay={950}>
+            <Datasets />
           </AnimatedComponent>
         </div>
         <div id="blog" className="py-10">
@@ -88,10 +100,7 @@ const DesktopLayout = () => {
           </AnimatedComponent>
         </div>
       </div>
- 
       <Footer />
-         
-
     </>
   );
 };

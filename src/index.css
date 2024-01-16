@@ -96,3 +96,11 @@ to {
 }
 }
 
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+@apply grid grid-cols-2 justify-center items-center content-center gap-2 lg:gap-6 h-full;
+}

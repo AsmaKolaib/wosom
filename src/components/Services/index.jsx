@@ -7,7 +7,7 @@ import Management from "../../assets/imags/Management.png";
 import AutoAnnotate from "../../assets/imags/Auto-Annotate.jpeg";
 export const BoxService = ({ img, text, title }) => {
   return (
-    <div className="max-w-sm bg-white rounded-2xl overflow-hidden px-4 pb-4 pt-4 h-full">
+    <div className="max-w-md bg-white rounded-2xl overflow-hidden px-4 pb-4 pt-4 h-full">
       <img
         src={img}
         alt="Service Image"
@@ -27,7 +27,7 @@ const index = () => {
   return (
     <div className="h-full w-full font-main ">
       <div className="grid grid-cols-1 justify-between content-between  w-2/2 h-full ">
-        <div className="w-full lg:p-8  text-center ">
+        <div className="w-full lg:p-8  ">
           <h1 className="font-main font-bold text-lg xl:text-3xl">
             Unlocking Possibilities
           </h1>
@@ -35,9 +35,9 @@ const index = () => {
             Our Services Showcase
           </p>
         </div>
-        <div className="grid grid-cols-1  px-32">
-        <div className="flex  flex-row  gap-8 w-full px-8 py-4">
-        <div className=" h-full">
+        <div className="grid grid-cols-1 ">
+        <div className="flex  flex-row   gap-8 w-full px-8 py-4">
+        <div className=" h-full ">
             <BoxService
               title="Management"
               text="Maintain a well-structured and organized data repository with our intuitive data management tools. Easily upload, categorize, and search for your datasets, ensuring efficient data access and utilization."
