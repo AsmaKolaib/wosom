@@ -11,7 +11,7 @@ import FAQ from "../components/FAQ/index-m";
 import Contact from "../components/Contact/index-m";
 import Footer from "../components/Footer/index-m";
 import ScrollToTop from "../components/Button/to-up";
-
+import Datasets from "../components/Datasets/index-m";
 const AnimatedComponent = ({ children, delay = 0 }) => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
@@ -63,7 +63,7 @@ const MoblieLayout = () => {
             <Features />
           </AnimatedComponent>
         </div>
-        <div id="services" className="pt-6">
+        <div id="services" className="">
           <AnimatedComponent delay={700}>
             <Services />
           </AnimatedComponent>
@@ -71,6 +71,11 @@ const MoblieLayout = () => {
         <div id="prices" className="pt-6 px-2 bg-white">
           <AnimatedComponent delay={900}>
             <Prices />
+          </AnimatedComponent>
+        </div>
+        <div >
+          <AnimatedComponent delay={950}>
+            <Datasets />
           </AnimatedComponent>
         </div>
         <div id="blog">

@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../Button";
+import Button from "../Button/index-m";
 import ArticleBox from "./articleBox";
 
 const Article = () => {

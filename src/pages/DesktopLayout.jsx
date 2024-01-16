@@ -79,7 +79,7 @@ const DesktopLayout = () => {
       </div>
      
       <div className="container mx-auto flex flex-col px-0 lg:px-10 ">
-      <div id="blog" className="py-10">
+      <div  className="py-10">
           <AnimatedComponent delay={950}>
             <Datasets />
           </AnimatedComponent>

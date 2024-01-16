@@ -2,7 +2,7 @@ import React from "react";
 import Img1 from "../../assets/imags/2.png";
 import Img2 from "../../assets/imags/3.png";
 import Partners from "../Partners//index-m";
-
+import Button from "../Button/index-m";
 import { NavLink } from "react-router-dom";
 const index = () => {
   return (
@@ -40,7 +40,7 @@ const index = () => {
               We save time, money, and resources by automating processes that
               are tedious and prone to errors
             </p>
-            <NavLink
+            {/* <NavLink
               to="#"
               className=" flex justify-center items-center font-main font-bold mt-10 "
             >
@@ -59,8 +59,12 @@ const index = () => {
                   fill="white"
                 />
               </svg>
-              Try it for free now
-            </NavLink>
+              Try it for free now */}
+              
+            {/* </NavLink> */}
+            <div className="mt-8 flex justify-center h-full  mb-10">
+            <Button text=" Try it for free now" bgColor="bg-white" textColor="text-black" />
+          </div>
           </div>
           <Partners/>
         </div>
